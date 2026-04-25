@@ -1,199 +1,230 @@
+<!-- ============================================================
+     HAMZA BIN RAHEEL — README.md
+     VS Code window + Hacker Terminal + Cipher Puzzle + ASCII Art
+     Pure copy-paste. Zero setup required.
+     ============================================================ -->
+
+<!-- VSCODE WINDOW HEADER -->
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=1e1e1e&height=36&text=●%20●%20●%20%20%20hamza.profile.tsx%20—%20VS%20Code&fontSize=13&fontColor=6b6b6b&fontAlignY=55&textBg=false"/>
+</div>
+
+<!-- TAB BAR -->
 <div align="center">
 
-<!-- ANIMATED HEADER -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:185FA5,100:7F77DD&height=200&section=header&text=Hamza%20Bin%20Raheel&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=19%20%7C%20CS%20%40%20FAST-NUCES%20%7C%20Full-Stack%20%2B%20Cloud%20%2B%20AI&descAlignY=60&descSize=18&animation=fadeIn" />
-
-<!-- TYPING ANIMATION -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=378ADD&center=true&vCenter=true&width=700&lines=Building+serverless+infra+on+AWS+%E2%98%81%EF%B8%8F;Full-stack+dev+%40+NETSOL+at+18+%F0%9F%94%A5;Python+%7C+FastAPI+%7C+React+%7C+Docker;Making+AI+tools+that+actually+work+%F0%9F%A4%96;Open+to+collabs+%E2%80%94+let%27s+build+something+crazy" alt="Typing SVG" />
-</a>
-
-<br/>
-
-<!-- PROFILE VIEWS + SOCIALS -->
-<p>
-  <img src="https://komarev.com/ghpvc/?username=hamzamaverick51&label=Profile+Views&color=185FA5&style=for-the-badge" alt="profile views" />
-  <a href="https://linkedin.com/in/hamza-raheel829001319">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:hamzaprofessionalwork@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <img src="https://img.shields.io/badge/FAST--NUCES-CS%20%7C%20GPA%203.3-7F77DD?style=for-the-badge" />
-</p>
+![](https://img.shields.io/badge/📄%20hamza.profile.tsx-252526?style=flat-square&labelColor=252526&color=252526)
+![](https://img.shields.io/badge/🔒%20secrets.enc-1e1e1e?style=flat-square&labelColor=1e1e1e&color=1e1e1e)
+![](https://img.shields.io/badge/⚡%20deploy.sh-1e1e1e?style=flat-square&labelColor=1e1e1e&color=1e1e1e)
+![](https://img.shields.io/badge/🤖%20ai__tools.py-1e1e1e?style=flat-square&labelColor=1e1e1e&color=1e1e1e)
 
 </div>
 
+```
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  EXPLORER          ║                  hamza.profile.tsx                     ║
+║  ─────────────     ║  ─────────────────────────────────────────────────     ║
+║  ▼ HAMZA           ║                                                        ║
+║    📄 about.ts     ║   1  import { Developer } from '@fast-nuces/cs-2028'   ║
+║    📄 stack.tsx    ║   2  import { AWS, Docker, FastAPI } from 'netsol'     ║
+║    📄 projects.md  ║   3  import { Gemini, Supabase } from 'side-projects'  ║
+║    🔒 secrets.enc  ║   4                                                    ║
+║    📄 deploy.sh    ║   5  const hamza: Developer = {                        ║
+║    📄 ai_tools.py  ║   6    name:       "Hamza Bin Raheel",                 ║
+║                    ║   7    age:        19,                                 ║
+║  OUTLINE           ║   8    gpa:        3.3,                                ║
+║  ─────────────     ║   9    school:     "FAST-NUCES, Lahore 🇵🇰",           ║
+║  ƒ whoami()        ║  10    status:     "open to insane collabs",           ║
+║  ƒ getStack()      ║  11    superpower: "youngest SWE @ NETSOL at 18",      ║
+║  ƒ buildThings()   ║  12  }                                                 ║
+║                    ║  13                                                    ║
+║  TERMINAL ●        ║  14  export default hamza                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+```
+
 ---
 
-<!-- ABOUT ME — TERMINAL STYLE -->
+<!-- MATRIX HACKER TERMINAL TYPING ANIMATION -->
 <div align="center">
+
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=13&pause=800&color=00FF41&background=0D110E00&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=%24+ssh+hamzamaverick51%40github.com;Connecting...+%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88+100%25+ACCESS+GRANTED+%E2%9C%93;Stack%3A+Python+%7C+FastAPI+%7C+React+%7C+AWS+%7C+Docker+%5B+OK+%5D" alt="Typing SVG" /></a>
+
+</div>
 
 ```bash
-$ whoami
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Name    : Hamza Bin Raheel
-  Age     : 19 (youngest SWE on the floor @ NETSOL Technologies)
-  Role    : Full-Stack Engineer + Cloud Architect + AI Tinkerer
-  School  : BS Computer Science — FAST-NUCES, Lahore, Pakistan
-  Status  : Open to internships, collabs & crazy side projects
-  Stack   : Python · FastAPI · React · AWS · Docker · PostgreSQL
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┌──[hamza@github]─[~/universe]
+│
+├─$ cat whoami.txt
+│   ╔══════════════════════════════════════════════════════╗
+│   ║  19yr old building production systems from scratch   ║
+│   ║  Youngest SWE on the floor @ NETSOL Technologies     ║
+│   ║  Deployed on AWS · Dockerized · Serverless-first     ║
+│   ╚══════════════════════════════════════════════════════╝
+│
+├─$ ./getStack.sh --verbose
+│   Python      ████████████████████  92%
+│   React        ███████████████████░  88%
+│   AWS          ██████████████████░░  85%
+│   FastAPI      ████████████████░░░░  80%
+│   C++ / DSA    ████████████████░░░░  78%
+│   Docker       ███████████████░░░░░  75%
+│   PostgreSQL   ███████████████░░░░░  76%
+│
+├─$ ls -la projects/
+│   dual-finance-tool/    gradient-vision/    arch-portal/
+│
+└─$ uptime
+    19 years old · still going · refusing to stop 🔥
+```
+
+---
+
+<!-- ASCII ART NAME BANNER -->
+<div align="center">
+
+```
+    ██╗  ██╗ █████╗ ███╗   ███╗███████╗ █████╗ 
+    ██║  ██║██╔══██╗████╗ ████║╚══███╔╝██╔══██╗
+    ███████║███████║██╔████╔██║  ███╔╝ ███████║
+    ██╔══██║██╔══██║██║╚██╔╝██║ ███╔╝  ██╔══██║
+    ██║  ██║██║  ██║██║ ╚═╝ ██║███████╗██║  ██║
+    ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝
+
+        ·  F U L L - S T A C K  ·  C L O U D  ·  A I  ·
+```
+
+```
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    ░  ┌──────────────────────────────────────────┐  ░
+    ░  │  ██  ██  ██   name   : Hamza Bin Raheel  │  ░
+    ░  │  ████████     age    : 19 · LHR · PK     │  ░
+    ░  │  ██  ██  ██   gpa    : 3.3 @ FAST-NUCES  │  ░
+    ░  │  ████████     builds : production things  │  ░
+    ░  │  ██  ██  ██   vibe   : ships it           │  ░
+    ░  └──────────────────────────────────────────┘  ░
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ```
 
 </div>
 
 ---
 
-<!-- GITHUB STATS — 3 CARDS IN A ROW -->
+<!-- PROJECTS AS TYPED CODE -->
 <div align="center">
 
-## 📊 GitHub Stats
+## `📁 ~/projects`
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=hamzamaverick51&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=378ADD&icon_color=7F77DD&text_color=c9d1d9"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamzamaverick51&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=378ADD&text_color=c9d1d9&langs_count=8"/>
+</div>
+
+```typescript
+// ── dual-finance-tool ──────────────────────────────────── ⭐ FEATURED
+const dualFinance = {
+  stack:   ["FastAPI", "Supabase", "Gemini AI", "AWS Lambda", "S3", "CloudFront"],
+  metrics: {
+    forecastAccuracy : "90%+",    // Appexnow enterprise Flex API
+    userInsightBoost : "75%",     // Gemini AI financial intelligence layer
+    latencyReduction : "60%",     // AWS serverless vs traditional backend
+    auth             : "Supabase RBAC · multi-user · real-time logging"
+  }
+}
+
+// ── gradient-vision ───────────────────────────────────── 🔢 ML + NLP
+const gradientVision = {
+  stack:   ["Python", "SymPy", "NumPy", "Matplotlib", "Plotly", "scikit-learn"],
+  metrics: {
+    gradientDetection : "100%",   // hybrid symbolic-numeric computation
+    conceptualBoost   : "80%",    // 2D/3D plots + vector field visualizations
+    nlpAccuracy       : "90%+",   // custom NLP engine for math queries
+    mlConfidence      : "95%"     // eigenvalue analysis via sklearn
+  }
+}
+
+// ── arch-portal ───────────────────────────────────────── 🏗️ SYSTEM DESIGN
+const archPortal = {
+  stack:   ["React", "Node.js", "Express", "MongoDB", "SQL"],
+  metrics: {
+    navSpeedBoost    : "60%",     // high-density React dashboard
+    adminOverheadDrop: "40%",     // 5+ legacy systems → 1 unified portal
+    dataRendering    : "<100ms",  // real-time grading + attendance telemetry
+    umlSchemas       : "20+"      // SDA lifecycle · state machines · schemas
+  }
+}
+```
+
+---
+
+<!-- CIPHER PUZZLE -->
+<div align="center">
+
+## `🔒 secrets.enc` — *crack it or stay basic*
+
+</div>
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║                      [ ENCRYPTED PAYLOAD ]                           ║
+║                                                                      ║
+║   Three layers. Three types of people.                               ║
+║                                                                      ║
+║   ── LAYER 1 · Base64 ──────────────────────────────────────────    ║
+║   aGFtemFwcm9mZXNzaW9uYWx3b3JrQGdtYWlsLmNvbQ==                     ║
+║   $ echo "<above>" | base64 -d                                       ║
+║                                                                      ║
+║   ── LAYER 2 · Caesar Cipher (shift 3) ─────────────────────────    ║
+║   "L'p d ixoo-vwdfn ghyhorshu zkr vklsv lw"                         ║
+║   Decode it. You'll know what it means.                              ║
+║                                                                      ║
+║   ── LAYER 3 · For the real ones ──────────────────────────────     ║
+║   Solve both layers. DM me the answers.                              ║
+║   What you get: early access to my next project.                     ║
+║   No cap.                                                            ║
+║                                                                      ║
+║   If you solved it → you're exactly who I want to build with. 🤝    ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+<!-- GITHUB STATS — MATRIX THEME -->
+<div align="center">
+
+## `$ ./stats.sh --full`
+
+<img height="170em" src="https://github-readme-stats.vercel.app/api?username=hamzamaverick51&show_icons=true&theme=chartreuse-dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d110e&title_color=00FF41&icon_color=00cc33&text_color=88ff88"/>
+<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamzamaverick51&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=0d110e&title_color=00FF41&text_color=88ff88&langs_count=6"/>
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=hamzamaverick51&theme=tokyonight&hide_border=true&background=0d1117&ring=378ADD&fire=7F77DD&currStreakLabel=378ADD" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=hamzamaverick51&theme=chartreuse-dark&hide_border=true&background=0d110e&ring=00FF41&fire=00cc33&currStreakLabel=00FF41"/>
 
 </div>
 
 ---
 
-<!-- ACTIVITY GRAPH -->
+<!-- CONTRIBUTION GRAPH -->
 <div align="center">
 
-## 🔥 Contribution Graph
-
-[![Hamza's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=hamzamaverick51&bg_color=0d1117&color=378ADD&line=7F77DD&point=ffffff&area=true&hide_border=true)](https://github.com/hamzamaverick51)
+[![activity graph](https://github-readme-activity-graph.vercel.app/graph?username=hamzamaverick51&bg_color=0d110e&color=00FF41&line=00cc33&point=ffffff&area=true&hide_border=true)](https://github.com/hamzamaverick51)
 
 </div>
 
 ---
 
-<!-- TECH STACK — ANIMATED ICONS -->
+<!-- GIT LOG TIMELINE -->
 <div align="center">
 
-## 🛠️ Tech Stack
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
-**Frameworks & Libraries**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Jinja2](https://img.shields.io/badge/Jinja2-B41717?style=for-the-badge&logo=jinja&logoColor=white)
-
-**Cloud & DevOps**
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=FF9900)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![EC2](https://img.shields.io/badge/EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
-![S3](https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
-![CloudFront](https://img.shields.io/badge/CloudFront-8C4FFF?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-**Databases & Auth**
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-
-</div>
-
----
-
-<!-- PROJECTS — CARDS WITH METRICS -->
-<div align="center">
-
-## 🚀 Featured Projects
-
-</div>
-
-### ⚡ Dual Finance Tool
-> *FastAPI · Supabase · Gemini AI · Flex API · AWS Lambda · S3/CloudFront*
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  🏦 Enterprise-grade tax & installment forecasting platform     │
-│                                                                 │
-│  📈 90%+ forecast accuracy      via Appexnow Flex API           │
-│  🤖 75% UX boost                via Gemini AI financial insights │
-│  ⚡ 60% latency reduction       via AWS serverless deployment    │
-│  🔐 Multi-user secure access    via Supabase Auth + real-time DB │
-└─────────────────────────────────────────────────────────────────┘
-```
-
----
-
-### 🎯 GradientVision
-> *Python · SymPy · NumPy · Matplotlib · Plotly · scikit-learn · NLP*
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  🔢 AI-powered math visualization & calculus engine             │
-│                                                                 │
-│  ✅ 100% gradient detection     hybrid symbolic-numeric compute  │
-│  📊 80% conceptual boost        via 2D/3D + vector field plots   │
-│  🗣️ 90%+ NLP accuracy          custom natural language math      │
-│  🧠 95% ML confidence          eigenvalue analysis via sklearn   │
-└─────────────────────────────────────────────────────────────────┘
-```
-
----
-
-### 🏗️ ARCH Portal
-> *React · Node.js · Express · MongoDB · SQL · System Design*
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  🏛️ Unified MERN-stack university administration portal         │
-│                                                                 │
-│  🚀 60% navigation speed boost  high-density React dashboard    │
-│  📉 40% admin overhead drop     5+ legacy systems → 1 portal    │
-│  ⚡ Sub-100ms data rendering    MongoDB/SQL RBAC pipelines       │
-│  📐 20+ UML schemas authored    full SDA lifecycle ownership     │
-└─────────────────────────────────────────────────────────────────┘
-```
-
----
-
-<!-- EXPERIENCE TIMELINE -->
-<div align="center">
-
-## 💼 Experience
+## `$ git log --oneline --graph --all`
 
 </div>
 
 ```
-2025 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-         🏢 SOFTWARE ENGINEERING INTERN — NETSOL Technologies Ltd.
-            Lahore, Pakistan | Jun 2025 – Aug 2025
-            ✦ AWS Lambda + API Gateway serverless microservices
-            ✦ Supabase auth + PostgreSQL data management
-            ✦ Docker → EC2 containerized multi-stack deployment
-            ✦ FastAPI RESTful APIs + S3/CloudFront frontend hosting
-            ⭐ Youngest software engineer on the floor at age 18
-
-2023 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-         🌐 IT INTERN — Valeem Online
-            Jeddah, KSA | Jun 2023 – Nov 2023
-            ✦ Technical support for hundreds of students & faculty globally
-            ✦ Server maintenance, user support & IT troubleshooting
+* f4a91c3  (HEAD → main)  🎓 cs @ fast-nuces — gpa 3.3, expected june 2028
+* 3d72b1a               ☁️  swe intern @ netsol — youngest on floor, aws + docker + fastapi
+* 9e15f0c               🤖 dual finance tool — gemini ai · 90% forecast accuracy · serverless
+* 7c3a002               🔢 gradientvision — 100% gradient detection · custom nlp · 3d viz
+* 2b84f11               🏗️  arch portal — 5 systems → 1 · sub-100ms · 20+ uml schemas
+* 8d10e9a               🌐 it intern @ valeem online — jeddah, ksa · global support
+* 1f903c7               🐍 picked up python — never looked back
+* 0000001  (origin)      🚀 born in pakistan. started building.
 ```
 
 ---
@@ -201,49 +232,42 @@ $ whoami
 <!-- TROPHIES -->
 <div align="center">
 
-## 🏆 GitHub Trophies
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=hamzamaverick51&theme=tokyonight&no-frame=true&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=hamzamaverick51&theme=matrix&no-frame=true&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
 ---
 
-<!-- SNAKE ANIMATION -->
+<!-- BOTTOM VSCODE TERMINAL -->
 <div align="center">
 
-## 🐍 Contribution Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hamzamaverick51/hamzamaverick51/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hamzamaverick51/hamzamaverick51/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/hamzamaverick51/hamzamaverick51/output/github-snake.svg" />
-</picture>
-
-> ⚙️ To enable the snake: go to your **hamzamaverick51/hamzamaverick51** repo → Actions → enable the `Generate Snake` workflow
+## `TERMINAL`
 
 </div>
 
----
+```
+TERMINAL ──────────────────────────────────────────────────── ✕ □ —
+hamza@github MINGW64 ~/universe (main)
 
-<!-- QUOTE -->
+$ echo "open to internships · collabs · building things nobody has built"
+  open to internships · collabs · building things nobody has built
+
+$ cat contact.txt
+  📧  hamzaprofessionalwork@gmail.com
+  💼  linkedin.com/in/hamza-raheel829001319
+  🐙  github.com/hamzamaverick51
+
+$ git push origin main --force
+  Pushing Hamza to the world ████████████████████ 100% ✓
+
+▌
+```
+
+<!-- FOOTER -->
 <div align="center">
 
-## 💬 Dev Quote of the Day
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d110e,50:00cc33,100:00FF41&height=100&section=footer&fontSize=0"/>
 
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)](https://github.com/piyushsuthar/github-readme-quotes)
-
-</div>
-
----
-
-<!-- FOOTER WAVE -->
-<div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7F77DD,50:185FA5,100:0d1117&height=120&section=footer&animation=fadeIn"/>
-
-**Let's build something that's never been built before.**
-
-`hamzaprofessionalwork@gmail.com` · [`LinkedIn`](https://linkedin.com/in/hamza-raheel829001319) · [`GitHub`](https://github.com/hamzamaverick51)
+`built different` &nbsp;·&nbsp; `ships fast` &nbsp;·&nbsp; `19 and dangerous`
 
 </div>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Hamza Bin Raheel</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --green:#00ff88;
+  --blue:#378ADD;
+  --purple:#7F77DD;
+  --orange:#ff6b35;
+  --bg:#020408;
+  --text:#e8f4f8;
+}
+html,body{width:100%;height:100%;overflow-x:hidden;background:var(--bg);color:var(--text);font-family:'Courier New',monospace;}
+canvas#bg{position:fixed;top:0;left:0;z-index:0;}
+
+/* CURSOR */
+.cursor{position:fixed;width:12px;height:12px;border-radius:50%;background:var(--green);pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform 0.1s,width 0.2s,height 0.2s;mix-blend-mode:screen;}
+.cursor-ring{position:fixed;width:40px;height:40px;border-radius:50%;border:1px solid var(--green);pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all 0.15s ease;opacity:0.5;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.5rem 3rem;border-bottom:1px solid rgba(0,255,136,0.1);backdrop-filter:blur(10px);background:rgba(2,4,8,0.6);}
+.nav-logo{font-size:1rem;letter-spacing:0.3em;color:var(--green);text-transform:uppercase;}
+.nav-links{display:flex;gap:2rem;}
+.nav-links a{color:rgba(232,244,248,0.6);text-decoration:none;font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;transition:color 0.3s;}
+.nav-links a:hover{color:var(--green);}
+
+/* SECTIONS */
+section{position:relative;z-index:10;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6rem 3rem;}
+
+/* HERO */
+#hero{flex-direction:column;text-align:center;}
+.glitch-wrapper{position:relative;margin-bottom:1rem;}
+.glitch{font-size:clamp(3rem,10vw,8rem);font-weight:900;letter-spacing:-0.02em;color:#fff;position:relative;text-transform:uppercase;line-height:1;}
+.glitch::before,.glitch::after{content:attr(data-text);position:absolute;top:0;left:0;width:100%;height:100%;}
+.glitch::before{color:var(--green);animation:glitch1 3s infinite;clip-path:polygon(0 0,100% 0,100% 35%,0 35%);}
+.glitch::after{color:var(--purple);animation:glitch2 3s infinite;clip-path:polygon(0 65%,100% 65%,100% 100%,0 100%);}
+@keyframes glitch1{0%,90%,100%{transform:translate(0)}91%{transform:translate(-3px,1px)}93%{transform:translate(3px,-1px)}95%{transform:translate(-2px,2px)}}
+@keyframes glitch2{0%,90%,100%{transform:translate(0)}91%{transform:translate(3px,-1px)}93%{transform:translate(-3px,1px)}95%{transform:translate(2px,-2px)}}
+.hero-sub{font-size:clamp(0.8rem,2vw,1rem);letter-spacing:0.4em;color:var(--green);text-transform:uppercase;margin-bottom:0.5rem;opacity:0;animation:fadeUp 1s 0.5s forwards;}
+.hero-desc{font-size:clamp(0.9rem,2vw,1.1rem);color:rgba(232,244,248,0.5);max-width:600px;line-height:1.8;margin:1.5rem auto;opacity:0;animation:fadeUp 1s 0.8s forwards;}
+.hero-badges{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;opacity:0;animation:fadeUp 1s 1s forwards;}
+.badge{padding:0.4rem 1rem;border:1px solid rgba(0,255,136,0.3);font-size:0.7rem;letter-spacing:0.2em;color:var(--green);text-transform:uppercase;border-radius:2px;background:rgba(0,255,136,0.05);}
+.scroll-hint{position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:rgba(232,244,248,0.3);font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;animation:bounce 2s infinite;}
+.scroll-line{width:1px;height:60px;background:linear-gradient(to bottom,var(--green),transparent);animation:scrollLine 2s infinite;}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+@keyframes scrollLine{0%{opacity:0;transform:scaleY(0);transform-origin:top}50%{opacity:1}100%{opacity:0;transform:scaleY(1);transform-origin:top}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* SECTION TITLES */
+.section-label{font-size:0.65rem;letter-spacing:0.4em;color:var(--green);text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:1rem;}
+.section-label::before{content:'';display:block;width:40px;height:1px;background:var(--green);}
+.section-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.1;text-transform:uppercase;}
+
+/* PROJECTS */
+#projects{flex-direction:column;align-items:flex-start;max-width:1200px;margin:0 auto;width:100%;}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5px;margin-top:4rem;width:100%;background:rgba(0,255,136,0.1);}
+.project-card{background:var(--bg);padding:2.5rem;position:relative;overflow:hidden;cursor:pointer;transition:background 0.3s;}
+.project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--green),var(--purple));transform:scaleX(0);transition:transform 0.4s;transform-origin:left;}
+.project-card:hover{background:#030810;}
+.project-card:hover::before{transform:scaleX(1);}
+.project-num{font-size:5rem;font-weight:900;color:rgba(0,255,136,0.06);position:absolute;top:1rem;right:1.5rem;line-height:1;}
+.project-tag{font-size:0.6rem;letter-spacing:0.3em;color:var(--green);text-transform:uppercase;margin-bottom:1rem;}
+.project-name{font-size:1.4rem;font-weight:700;margin-bottom:1rem;line-height:1.2;}
+.project-desc{font-size:0.8rem;color:rgba(232,244,248,0.5);line-height:1.8;margin-bottom:1.5rem;}
+.project-metrics{display:flex;flex-direction:column;gap:0.4rem;}
+.metric-row{display:flex;align-items:center;gap:0.8rem;font-size:0.72rem;}
+.metric-bar{flex:1;height:2px;background:rgba(255,255,255,0.05);border-radius:1px;overflow:hidden;}
+.metric-fill{height:100%;border-radius:1px;transition:width 1s ease;}
+.metric-val{color:var(--green);font-weight:700;min-width:3rem;text-align:right;}
+.metric-label{color:rgba(232,244,248,0.4);min-width:80px;}
+.project-stack{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:1.5rem;}
+.stack-tag{font-size:0.6rem;padding:0.2rem 0.6rem;border:1px solid rgba(55,138,221,0.3);color:var(--blue);letter-spacing:0.1em;border-radius:2px;}
+
+/* SKILLS */
+#skills{flex-direction:column;max-width:1200px;margin:0 auto;width:100%;}
+.skills-container{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:4rem;width:100%;}
+.skill-group-title{font-size:0.65rem;letter-spacing:0.4em;color:rgba(232,244,248,0.3);text-transform:uppercase;margin-bottom:1.5rem;}
+.skill-item{margin-bottom:1.2rem;}
+.skill-header{display:flex;justify-content:space-between;margin-bottom:0.4rem;font-size:0.8rem;}
+.skill-name{color:var(--text);}
+.skill-pct{color:var(--green);}
+.skill-track{height:3px;background:rgba(255,255,255,0.05);border-radius:2px;overflow:hidden;}
+.skill-progress{height:100%;border-radius:2px;width:0;transition:width 1.5s cubic-bezier(0.4,0,0.2,1);}
+.skill-progress.green{background:linear-gradient(90deg,#00ff88,#00cc66);}
+.skill-progress.blue{background:linear-gradient(90deg,#378ADD,#185FA5);}
+.skill-progress.purple{background:linear-gradient(90deg,#7F77DD,#534AB7);}
+.skill-progress.orange{background:linear-gradient(90deg,#ff6b35,#cc4400);}
+
+/* 3D CUBE CONTAINER */
+#cube-section{flex-direction:column;align-items:center;}
+#three-container{width:100%;height:500px;position:relative;}
+
+/* EXPERIENCE */
+#experience{flex-direction:column;max-width:1000px;margin:0 auto;width:100%;}
+.timeline{margin-top:4rem;position:relative;}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--green),transparent);}
+.timeline-item{padding:0 0 4rem 3rem;position:relative;}
+.timeline-dot{position:absolute;left:-5px;top:0;width:11px;height:11px;border-radius:50%;border:1px solid var(--green);background:var(--bg);}
+.timeline-dot.active{background:var(--green);}
+.timeline-date{font-size:0.65rem;letter-spacing:0.3em;color:var(--green);text-transform:uppercase;margin-bottom:0.5rem;}
+.timeline-role{font-size:1.4rem;font-weight:700;margin-bottom:0.3rem;}
+.timeline-company{font-size:0.85rem;color:rgba(232,244,248,0.5);margin-bottom:1rem;}
+.timeline-points{list-style:none;display:flex;flex-direction:column;gap:0.5rem;}
+.timeline-points li{font-size:0.8rem;color:rgba(232,244,248,0.6);line-height:1.7;padding-left:1rem;position:relative;}
+.timeline-points li::before{content:'▸';position:absolute;left:0;color:var(--green);}
+
+/* CONTACT */
+#contact{flex-direction:column;align-items:center;text-align:center;}
+.contact-line{font-size:clamp(2rem,8vw,6rem);font-weight:900;text-transform:uppercase;line-height:0.9;margin-bottom:3rem;}
+.contact-line span{color:var(--green);}
+.contact-links{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;margin-top:2rem;}
+.contact-link{padding:1rem 2.5rem;border:1px solid rgba(0,255,136,0.3);color:var(--green);text-decoration:none;font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;transition:all 0.3s;position:relative;overflow:hidden;}
+.contact-link::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:rgba(0,255,136,0.1);transition:left 0.3s;}
+.contact-link:hover::before{left:0;}
+.contact-link:hover{border-color:var(--green);}
+
+/* FOOTER */
+footer{position:relative;z-index:10;padding:2rem 3rem;border-top:1px solid rgba(0,255,136,0.1);display:flex;justify-content:space-between;align-items:center;font-size:0.65rem;letter-spacing:0.2em;color:rgba(232,244,248,0.2);}
+
+/* NOISE OVERLAY */
+.noise{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:0.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+/* SCANLINES */
+.scanlines{position:fixed;top:0;left:0;width:100%;height:100%;z-index:2;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.03) 2px,rgba(0,0,0,0.03) 4px);}
+
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem;}
+  section{padding:5rem 1.5rem;}
+  .skills-container{grid-template-columns:1fr;}
+  .contact-line{font-size:clamp(2rem,12vw,4rem);}
+  footer{flex-direction:column;gap:1rem;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<div class="noise"></div>
+<div class="scanlines"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<canvas id="bg"></canvas>
+
+<nav>
+  <div class="nav-logo">HBR</div>
+  <div class="nav-links">
+    <a href="#projects">Projects</a>
+    <a href="#skills">Stack</a>
+    <a href="#experience">XP</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-sub">Full-Stack · Cloud · AI</div>
+  <div class="glitch-wrapper">
+    <div class="glitch" data-text="HAMZA">HAMZA</div>
+    <div class="glitch" data-text="BIN RAHEEL" style="font-size:clamp(1.5rem,5vw,4rem);letter-spacing:0.3em;color:rgba(255,255,255,0.15);">BIN RAHEEL</div>
+  </div>
+  <div class="hero-desc">19 · CS @ FAST-NUCES Lahore · Youngest SWE @ NETSOL Technologies<br/>Building serverless infra, AI tools & systems that actually work.</div>
+  <div class="hero-badges">
+    <div class="badge">Python</div>
+    <div class="badge">FastAPI</div>
+    <div class="badge">React</div>
+    <div class="badge">AWS Lambda</div>
+    <div class="badge">Docker</div>
+    <div class="badge">PostgreSQL</div>
+    <div class="badge">Gemini AI</div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div style="width:100%">
+    <div class="section-label">Featured Work</div>
+    <div class="section-title">What I've<br/>Shipped</div>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-num">01</div>
+      <div class="project-tag">FastAPI · AWS Lambda · Gemini AI</div>
+      <div class="project-name">Dual Finance Tool</div>
+      <div class="project-desc">Enterprise-grade tax & installment forecasting platform with AI-generated financial insights and serverless AWS deployment.</div>
+      <div class="project-metrics">
+        <div class="metric-row">
+          <span class="metric-label">Forecast acc.</span>
+          <div class="metric-bar"><div class="metric-fill green" style="width:90%;background:linear-gradient(90deg,#00ff88,#00cc66)"></div></div>
+          <span class="metric-val">90%+</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">User insight</span>
+          <div class="metric-bar"><div class="metric-fill blue" style="width:75%;background:linear-gradient(90deg,#378ADD,#185FA5)"></div></div>
+          <span class="metric-val">+75%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Latency cut</span>
+          <div class="metric-bar"><div class="metric-fill purple" style="width:60%;background:linear-gradient(90deg,#7F77DD,#534AB7)"></div></div>
+          <span class="metric-val">-60%</span>
+        </div>
+      </div>
+      <div class="project-stack">
+        <span class="stack-tag">FastAPI</span><span class="stack-tag">Supabase</span><span class="stack-tag">Gemini AI</span><span class="stack-tag">Jinja2</span><span class="stack-tag">S3</span><span class="stack-tag">CloudFront</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">02</div>
+      <div class="project-tag">Python · NLP · scikit-learn · 3D Viz</div>
+      <div class="project-name">GradientVision</div>
+      <div class="project-desc">AI math visualization engine with hybrid symbolic-numeric computation, custom NLP, and ML-backed eigenvalue analysis.</div>
+      <div class="project-metrics">
+        <div class="metric-row">
+          <span class="metric-label">Detection</span>
+          <div class="metric-bar"><div class="metric-fill green" style="width:100%;background:linear-gradient(90deg,#00ff88,#00cc66)"></div></div>
+          <span class="metric-val">100%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">NLP accuracy</span>
+          <div class="metric-bar"><div class="metric-fill blue" style="width:90%;background:linear-gradient(90deg,#378ADD,#185FA5)"></div></div>
+          <span class="metric-val">90%+</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">ML confidence</span>
+          <div class="metric-bar"><div class="metric-fill orange" style="width:95%;background:linear-gradient(90deg,#ff6b35,#cc4400)"></div></div>
+          <span class="metric-val">95%</span>
+        </div>
+      </div>
+      <div class="project-stack">
+        <span class="stack-tag">SymPy</span><span class="stack-tag">NumPy</span><span class="stack-tag">Matplotlib</span><span class="stack-tag">Plotly</span><span class="stack-tag">NLP</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">03</div>
+      <div class="project-tag">MERN · System Design · SQL</div>
+      <div class="project-name">ARCH Portal</div>
+      <div class="project-desc">Unified university administration system collapsing 5+ legacy platforms into one sub-100ms MERN dashboard with RBAC pipelines.</div>
+      <div class="project-metrics">
+        <div class="metric-row">
+          <span class="metric-label">Nav speed</span>
+          <div class="metric-bar"><div class="metric-fill green" style="width:60%;background:linear-gradient(90deg,#00ff88,#00cc66)"></div></div>
+          <span class="metric-val">+60%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Admin overhead</span>
+          <div class="metric-bar"><div class="metric-fill blue" style="width:40%;background:linear-gradient(90deg,#378ADD,#185FA5)"></div></div>
+          <span class="metric-val">-40%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Render time</span>
+          <div class="metric-bar"><div class="metric-fill purple" style="width:85%;background:linear-gradient(90deg,#7F77DD,#534AB7)"></div></div>
+          <span class="metric-val">&lt;100ms</span>
+        </div>
+      </div>
+      <div class="project-stack">
+        <span class="stack-tag">React</span><span class="stack-tag">Node.js</span><span class="stack-tag">Express</span><span class="stack-tag">MongoDB</span><span class="stack-tag">SQL</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div style="width:100%">
+    <div class="section-label">Arsenal</div>
+    <div class="section-title">The Stack</div>
+  </div>
+  <div class="skills-container">
+    <div>
+      <div class="skill-group-title">Languages & Frameworks</div>
+      <div class="skill-item"><div class="skill-header"><span class="skill-name">Python</span><span class="skill-pct">92%</span></div><div class="skill-track"><div class="skill-progress green" data-width="92"></div></div></div>
+      <div class="skill-item"><div class="skill-header"><span class="skill-name">React / TypeScript</span><span class="skill-pct">88%</span></div><div class="skill-track"><div class="skill-progress blue" data-width="88"></div></div></div>
+      <div class="skill-item"><div class="skill-header"><span class="skill-name">FastAPI / Node.js</span><span class="skill-pct">84%</span></div><div class="skill-track"><div class="skill-progress purple" data-width="84"></div></div></div>
+      <div class="skill-item"><div class="skill-header"><span class="skill-name">C++ / DSA</span><span class="skill-pct">78%</span></div><div class="skill-track"><div class="skill-progress orange" data-width="78"></div></div></div>
+      <div class="skill-item"><div class="skill-header"><span class="skill-name">SQL / PostgreSQL</span><span class="skill-pct">76%</span></div><div class="skill-track"><div class="skill-progress green" data-width="76"></div></div></div>
+    </div>
+    <div>
+      <div class="skill-group-title">Cloud & DevOps</div>
+      <div class="skill-item"><div class="skill-header"><span class="skill-name">AWS (Lambda, EC2, S3, CF)</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-progress orange" data-width="85"></div></div></div>
+      <div class="skill-item"><div class="skill-header"><span class="skill-name">Docker</span><span class="skill-pct">80%</span></div><div class="skill-track"><div class="skill-progress blue" data-width="80"></div></div></div>
+      <div class="skill-item"><div class="skill-header"><span class="skill-name">Supabase / Auth</span><span class="skill-pct">82%</span></div><div class="skill-track"><div class="skill-progress green" data-width="82"></div></div></div>
+      <div class="skill-item"><div class="skill-header"><span class="skill-name">System Design / REST APIs</span><span class="skill-pct">80%</span></div><div class="skill-track"><div class="skill-progress purple" data-width="80"></div></div></div>
+      <div class="skill-item"><div class="skill-header"><span class="skill-name">AI / ML (Gemini, sklearn)</span><span class="skill-pct">75%</span></div><div class="skill-track"><div class="skill-progress orange" data-width="75"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div style="width:100%">
+    <div class="section-label">History</div>
+    <div class="section-title">Experience</div>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot active"></div>
+      <div class="timeline-date">Jun 2025 – Aug 2025</div>
+      <div class="timeline-role">Software Engineering Intern</div>
+      <div class="timeline-company">NETSOL Technologies Ltd. · Lahore, Pakistan</div>
+      <ul class="timeline-points">
+        <li>Built microservices via AWS Lambda + API Gateway for serverless infra</li>
+        <li>Integrated Supabase auth and PostgreSQL data management pipelines</li>
+        <li>Containerized apps with Docker for EC2 multi-stack deployment</li>
+        <li>Led frontend via HTML/CSS, Jinja templates, S3 + CloudFront hosting</li>
+        <li>Recognized as youngest software engineer on the floor at age 18</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Jun 2023 – Nov 2023</div>
+      <div class="timeline-role">IT Intern</div>
+      <div class="timeline-company">Valeem Online · Jeddah, Saudi Arabia</div>
+      <ul class="timeline-points">
+        <li>Technical support for hundreds of students and faculty globally</li>
+        <li>Server maintenance, user support, and IT troubleshooting</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Expected June 2028</div>
+      <div class="timeline-role">BS Computer Science</div>
+      <div class="timeline-company">FAST-NUCES · Lahore, Pakistan · GPA 3.3</div>
+      <ul class="timeline-points">
+        <li>OOP · Data Structures · AI · OS · Database Systems · Software Design</li>
+        <li>Calculus I–III · Linear Algebra · Computer Organization & Assembly</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-line">Let's<br/>Build<br/><span>Something.</span></div>
+  <div style="color:rgba(232,244,248,0.4);font-size:0.8rem;letter-spacing:0.2em;">Open to internships · collabs · crazy side projects</div>
+  <div class="contact-links">
+    <a class="contact-link" href="mailto:hamzaprofessionalwork@gmail.com">Email</a>
+    <a class="contact-link" href="https://linkedin.com/in/hamza-raheel829001319" target="_blank">LinkedIn</a>
+    <a class="contact-link" href="https://github.com/hamzamaverick51" target="_blank">GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2025 Hamza Bin Raheel</span>
+  <span>hamzamaverick51.github.io</span>
+  <span>Built with Three.js + raw ambition</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// ── CUSTOM CURSOR ──────────────────────────────────────────────
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX; my=e.clientY;
+  cursor.style.left=mx+'px'; cursor.style.top=my+'px';
+});
+function animRing(){
+  rx+=(mx-rx)*0.12; ry+=(my-ry)*0.12;
+  ring.style.left=rx+'px'; ring.style.top=ry+'px';
+  requestAnimationFrame(animRing);
+}
+animRing();
+document.querySelectorAll('a,.project-card,.contact-link').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cursor.style.width='20px';cursor.style.height='20px';ring.style.width='60px';ring.style.height='60px';ring.style.opacity='0.8';});
+  el.addEventListener('mouseleave',()=>{cursor.style.width='12px';cursor.style.height='12px';ring.style.width='40px';ring.style.height='40px';ring.style.opacity='0.5';});
+});
+
+// ── THREE.JS PARTICLE BACKGROUND ──────────────────────────────
+const canvas = document.getElementById('bg');
+const renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:true});
+renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+renderer.setSize(window.innerWidth, window.innerHeight);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+camera.position.z = 30;
+
+// PARTICLES
+const particleCount = 3000;
+const positions = new Float32Array(particleCount * 3);
+const colors = new Float32Array(particleCount * 3);
+const sizes = new Float32Array(particleCount);
+
+const colorPalette = [
+  new THREE.Color('#00ff88'),
+  new THREE.Color('#378ADD'),
+  new THREE.Color('#7F77DD'),
+  new THREE.Color('#ff6b35'),
+];
+
+for(let i=0;i<particleCount;i++){
+  positions[i*3]   = (Math.random()-0.5)*120;
+  positions[i*3+1] = (Math.random()-0.5)*120;
+  positions[i*3+2] = (Math.random()-0.5)*120;
+  const c = colorPalette[Math.floor(Math.random()*colorPalette.length)];
+  colors[i*3]=c.r; colors[i*3+1]=c.g; colors[i*3+2]=c.b;
+  sizes[i] = Math.random()*2+0.5;
+}
+
+const geo = new THREE.BufferGeometry();
+geo.setAttribute('position', new THREE.BufferAttribute(positions,3));
+geo.setAttribute('color', new THREE.BufferAttribute(colors,3));
+geo.setAttribute('size', new THREE.BufferAttribute(sizes,1));
+
+const mat = new THREE.PointsMaterial({
+  size:0.4, vertexColors:true, transparent:true, opacity:0.7,
+  sizeAttenuation:true,
+});
+const particles = new THREE.Points(geo, mat);
+scene.add(particles);
+
+// WIREFRAME ICOSAHEDRON
+const icoGeo = new THREE.IcosahedronGeometry(8, 1);
+const icoMat = new THREE.MeshBasicMaterial({color:0x00ff88, wireframe:true, transparent:true, opacity:0.08});
+const ico = new THREE.Mesh(icoGeo, icoMat);
+scene.add(ico);
+
+// SECOND ROTATING RING
+const ringGeo = new THREE.TorusGeometry(12, 0.05, 8, 80);
+const ringMat = new THREE.MeshBasicMaterial({color:0x378ADD, transparent:true, opacity:0.15});
+const torus = new THREE.Mesh(ringGeo, ringMat);
+torus.rotation.x = Math.PI/4;
+scene.add(torus);
+
+const ringGeo2 = new THREE.TorusGeometry(15, 0.03, 8, 100);
+const ringMat2 = new THREE.MeshBasicMaterial({color:0x7F77DD, transparent:true, opacity:0.1});
+const torus2 = new THREE.Mesh(ringGeo2, ringMat2);
+torus2.rotation.x = Math.PI/3;
+torus2.rotation.y = Math.PI/6;
+scene.add(torus2);
+
+// MOUSE PARALLAX
+let mouseX=0, mouseY=0;
+document.addEventListener('mousemove', e=>{
+  mouseX = (e.clientX/window.innerWidth - 0.5)*2;
+  mouseY = (e.clientY/window.innerHeight - 0.5)*2;
+});
+
+let targetX=0,targetY=0;
+const clock = new THREE.Clock();
+
+function animate(){
+  requestAnimationFrame(animate);
+  const t = clock.getElapsedTime();
+
+  targetX += (mouseX*0.5 - targetX)*0.05;
+  targetY += (-mouseY*0.5 - targetY)*0.05;
+
+  particles.rotation.y = t*0.04 + targetX*0.1;
+  particles.rotation.x = t*0.02 + targetY*0.1;
+
+  ico.rotation.x = t*0.1;
+  ico.rotation.y = t*0.15;
+
+  torus.rotation.z = t*0.08;
+  torus2.rotation.z = -t*0.05;
+  torus2.rotation.x = t*0.03;
+
+  // Pulse particle opacity
+  mat.opacity = 0.5 + Math.sin(t*0.5)*0.2;
+
+  renderer.render(scene, camera);
+}
+animate();
+
+window.addEventListener('resize',()=>{
+  camera.aspect = window.innerWidth/window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+// ── SCROLL-TRIGGERED SKILL BARS ────────────────────────────────
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.skill-progress').forEach(bar=>{
+        bar.style.width = bar.dataset.width+'%';
+      });
+    }
+  });
+},{threshold:0.2});
+document.querySelectorAll('#skills').forEach(s=>observer.observe(s));
+
+// ── SCROLL REVEAL ─────────────────────────────────────────────
+const revealObs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.style.opacity='1';
+      e.target.style.transform='translateY(0)';
+    }
+  });
+},{threshold:0.1});
+
+document.querySelectorAll('.project-card,.timeline-item').forEach(el=>{
+  el.style.opacity='0';
+  el.style.transform='translateY(40px)';
+  el.style.transition='opacity 0.7s ease, transform 0.7s ease';
+  revealObs.observe(el);
+});
+
+// ── SMOOTH SCROLL ─────────────────────────────────────────────
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>

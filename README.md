@@ -43,6 +43,16 @@
 
 ---
 
+<!-- PORTFOLIO LINK — THE REAL EXPERIENCE -->
+<div align="center">
+
+### 🌐 [→ Full 3D Portfolio: hamzamaverick51.github.io](https://hamzamaverick51.github.io)
+*WebGL · Three.js · Particle Systems · The actual crazy shit*
+
+</div>
+
+---
+
 <!-- MATRIX HACKER TERMINAL TYPING ANIMATION -->
 <div align="center">
 
@@ -256,6 +266,7 @@ $ cat contact.txt
   📧  hamzaprofessionalwork@gmail.com
   💼  linkedin.com/in/hamza-raheel829001319
   🐙  github.com/hamzamaverick51
+  🌐  hamzamaverick51.github.io
 
 $ git push origin main --force
   Pushing Hamza to the world ████████████████████ 100% ✓

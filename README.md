@@ -9,7 +9,7 @@
   <a href="#-research-atlas">
     <img src="https://img.shields.io/badge/RESEARCH_ATLAS-071A2B?style=for-the-badge&logo=semanticweb&logoColor=27C7A8" alt="Research atlas" />
   </a>
-  <a href="https://www.linkedin.com/in/hamza-raheel829001319">
+  <a href="https://www.linkedin.com/in/hamza-raheel-829001319/">
     <img src="https://img.shields.io/badge/LINKEDIN-071A2B?style=for-the-badge&logo=linkedin&logoColor=3BE8FF" alt="LinkedIn" />
   </a>
   <a href="mailto:hamzaprofessionalwork@gmail.com">
@@ -360,7 +360,7 @@ reality.
 
 [**Portfolio**](https://hamzamaverick51.github.io)
 &nbsp;·&nbsp;
-[**LinkedIn**](https://www.linkedin.com/in/hamza-raheel829001319)
+[**LinkedIn**](https://www.linkedin.com/in/hamza-raheel-829001319/)
 &nbsp;·&nbsp;
 [**Email**](mailto:hamzaprofessionalwork@gmail.com)
 

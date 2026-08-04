@@ -3,11 +3,14 @@
 </div>
 
 <p align="center">
-  <a href="https://hamzamaverick51.github.io">
-    <img src="https://img.shields.io/badge/PORTFOLIO-071A2B?style=for-the-badge&logo=githubpages&logoColor=3BE8FF" alt="Portfolio" />
+  <a href="https://github.com/hamzamaverick51?tab=repositories">
+    <img src="https://img.shields.io/badge/GITHUB_REPOS-071A2B?style=for-the-badge&logo=github&logoColor=3BE8FF" alt="GitHub repositories" />
   </a>
-  <a href="#-research-atlas">
-    <img src="https://img.shields.io/badge/RESEARCH_ATLAS-071A2B?style=for-the-badge&logo=semanticweb&logoColor=27C7A8" alt="Research atlas" />
+  <a href="#flagship-result">
+    <img src="https://img.shields.io/badge/FLAGSHIP_RESULT-071A2B?style=for-the-badge&logo=target&logoColor=27C7A8" alt="Flagship result" />
+  </a>
+  <a href="#selected-work">
+    <img src="https://img.shields.io/badge/SELECTED_WORK-071A2B?style=for-the-badge&logo=github&logoColor=3BE8FF" alt="Selected work" />
   </a>
   <a href="https://www.linkedin.com/in/hamza-raheel-829001319/">
     <img src="https://img.shields.io/badge/LINKEDIN-071A2B?style=for-the-badge&logo=linkedin&logoColor=3BE8FF" alt="LinkedIn" />
@@ -17,11 +20,12 @@
   </a>
 </p>
 
-<h3 align="center">Research-minded systems builder.</h3>
+<h3 align="center">Research engineer in training. Systems builder in practice.</h3>
 
 <p align="center">
-  I read papers until I find the untested assumption—then I build the
-  experiment, the tooling, and the evidence needed to answer it.
+  I build machine-learning experiments and software systems for the point where
+  clean benchmarks meet messy reality—domain shift, hidden leakage, constrained
+  data, and deployment.
   <br/><br/>
   <strong>BS Computer Science · FAST-NUCES Lahore · Class of 2028</strong>
 </p>
@@ -29,107 +33,55 @@
 <p align="center">
   <kbd>RESEARCH ENGINEERING</kbd>
   &nbsp;
+  <kbd>COMPUTER VISION</kbd>
+  &nbsp;
   <kbd>APPLIED ML</kbd>
   &nbsp;
   <kbd>SOFTWARE SYSTEMS</kbd>
-  &nbsp;
-  <kbd>AUTONOMOUS SYSTEMS</kbd>
 </p>
+
+> **Open to:** research collaborations, research-engineering internships, and
+> difficult ML systems where evaluation and reliability actually matter.
+
+<br/>
+
+<p align="center"><sub>01 / CURRENT SIGNAL</sub></p>
+
+<h2 align="center">Build → measure → learn → ship.</h2>
 
 <table>
   <tr>
-    <td align="center" width="25%">
-      <sub>BASE</sub><br/>
-      <strong>Lahore, Pakistan</strong>
+    <td width="50%" valign="top">
+      <h3>🌊 Working on now</h3>
+      <strong>Underwater computer vision under domain shift</strong>
+      <br/><br/>
+      A validated retention-constrained detector is complete. The present
+      bottleneck is scene-diverse target-native plastic data—not another blind
+      hyperparameter sweep.
     </td>
-    <td align="center" width="25%">
-      <sub>CURRENT MODE</sub><br/>
-      <strong>Research + Engineering</strong>
-    </td>
-    <td align="center" width="25%">
-      <sub>CORE QUESTION</sub><br/>
-      <strong>What fails under shift?</strong>
-    </td>
-    <td align="center" width="25%">
-      <sub>OPERATING RULE</sub><br/>
+    <td width="50%" valign="top">
+      <h3>🧭 Operating method</h3>
       <strong>Evidence before confidence</strong>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<p align="center"><sub>01 / RESEARCH ATLAS</sub></p>
-
-<h2 align="center">One question. Four failure modes.</h2>
-
-<p align="center">
-  My work spans different fields, but every thread asks what happens when an
-  intelligent system leaves the conditions it was designed for.
-</p>
-
-<div align="center">
-  <img src="./assets/research-panorama-v1.png" width="100%" alt="A research panorama connecting underwater vision, control systems, representation geometry, and language-model unlearning" />
-</div>
-
-<blockquote>
-  <strong>How do we identify, measure, and correct failures that clean aggregate
-  benchmarks hide?</strong>
-</blockquote>
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🌊 Domain shift</h3>
-      <strong>Underwater object detection</strong>
       <br/><br/>
-      Pool-to-sea transfer, reproducible YOLO26 training, video-safe
-      evaluation, and annotation efficiency.
-      <br/><br/>
-      <code>ACTIVE EXPERIMENT</code>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🛰️ Representation error</h3>
-      <strong>Data-mixture behavior</strong>
-      <br/><br/>
-      Measuring representation error across seven controlled mixtures of Earth
-      and space-analog training data.
-      <br/><br/>
-      <code>SWEEP DELIVERED</code>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🎛️ Stability</h3>
-      <strong>Controller analysis</strong>
-      <br/><br/>
-      Proof auditing, simulation, controller implementation, and parameter
-      regions where claimed behavior survives.
-      <br/><br/>
-      <code>ARTIFACTS UNDER REVIEW</code>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🧠 Selective forgetting</h3>
-      <strong>Language-model unlearning</strong>
-      <br/><br/>
-      Separating collateral degradation into representational, semantic, and
-      surface adjacency.
-      <br/><br/>
-      <code>STUDY DESIGN</code>
+      Predeclare gates, separate videos instead of random frames, retain source
+      capability, reject misleading aggregate wins, and leave an auditable path
+      from claim to artifact.
     </td>
   </tr>
 </table>
 
 <p align="center">
-  <sub>
-    Active research threads—not publication claims. Every result remains
-    qualified by its experimental status.
-  </sub>
+  <code>Lahore, Pakistan</code>
+  &nbsp;·&nbsp;
+  <code>research with receipts</code>
+  &nbsp;·&nbsp;
+  <code>systems that ship</code>
 </p>
 
 <br/>
 
-<p align="center"><sub>02 / FLAGSHIP MISSION</sub></p>
+<a id="flagship-result"></a>
+<p align="center"><sub>02 / FLAGSHIP RESULT</sub></p>
 
 <h2 align="center">Underwater detection that survives pool → sea.</h2>
 
@@ -139,74 +91,164 @@
   pool-domain evaluation.
 </p>
 
-<table>
-  <tr>
-    <td align="center" width="25%">
-      <h3>12,953</h3>
-      <sub>PUBLIC TRAIN IMAGES</sub>
-    </td>
-    <td align="center" width="25%">
-      <h3>2,869</h3>
-      <sub>PUBLIC VALIDATION IMAGES</sub>
-    </td>
-    <td align="center" width="25%">
-      <h3>1,206</h3>
-      <sub>DISTINCT OUTDOOR FRAMES</sub>
-    </td>
-    <td align="center" width="25%">
-      <h3>0 / 17</h3>
-      <sub>VIDEOS CROSSING CORRECTED SPLITS</sub>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="./assets/labust-transfer-result.svg" width="100%" alt="LABUST domain-transfer result: accepted adaptation improved target validation mAP50-95 from 0.0454 to 0.1244 while retaining 95.45 percent of the selected source score" />
+</div>
+
+The accepted method uses only **eight target training frames**, class-balanced
+public replay, a frozen backbone, and deterministic checkpoint interpolation.
+It improves target validation mAP50-95 from **0.0454 to 0.1244 (2.74×)** while
+retaining **0.5556 source validation mAP50-95**.
+
+The highest raw target aggregate was **0.16048**, but I rejected that branch:
+plastic mAP50-95 was only **0.00001050**, below the predeclared class gate. The
+accepted result is the strongest tested candidate that passed every gate it was
+eligible to face—not merely the largest convenient number.
 
 <p align="center">
-  <a href="https://github.com/hamzamaverick51/UNDER-SEA-DETECTION-ALGORITHM-WORK">
-    <img src="https://img.shields.io/badge/RESEARCH_WORKSPACE-0B3142?style=for-the-badge&logo=github&logoColor=3BE8FF" alt="Open research workspace" />
+  <a href="#selected-work">
+    <img src="https://img.shields.io/badge/EXPLORE_SELECTED_WORK-0B3142?style=for-the-badge&logo=github&logoColor=3BE8FF" alt="Explore selected work" />
   </a>
-  <a href="https://github.com/hamzamaverick51/UNDER-SEA-DETECTION-ALGORITHM-WORK/blob/main/CURRENT_STATE.md">
-    <img src="https://img.shields.io/badge/CANONICAL_STATUS-0B3142?style=for-the-badge&logo=readthedocs&logoColor=3BE8FF" alt="Read canonical project status" />
+  <a href="mailto:hamzaprofessionalwork@gmail.com">
+    <img src="https://img.shields.io/badge/ASK_ABOUT_THE_RESEARCH-0B3142?style=for-the-badge&logo=gmail&logoColor=27C7A8" alt="Ask Hamza about the underwater detection research" />
   </a>
 </p>
 
 <details>
-  <summary><strong>Open the technical mission log</strong></summary>
+  <summary><strong>Open the research record</strong></summary>
   <br/>
 
 ```text
-PUBLIC BASE
+PUBLIC BASELINE
 ├── TrashCan + SeaClear
-├── deterministic source conversion
-└── provenance and environment ledgers
+├── 12,953 train / 2,869 validation images
+└── 100 epochs complete at 0.62437 mAP50-95
 
 DATA AUDIT
 ├── 2,646 delivered exports
 ├── 1,206 distinct source frames
 └── augmentation + sequence leakage identified
 
-CORRECTED BENCHMARK
+CORRECTED EVALUATION
 ├── deduplicated by source frame
 ├── split by complete source video
-└── held-out cross-platform camera test
+└── 0 / 17 videos crossing corrected splits
 
-NEXT TRANSMISSION
-├── full 100-epoch public baseline
-└── leakage-free annotation-efficiency curve
+ACCEPTED ADAPTATION
+├── 8 local frames + class-balanced public replay
+├── frozen backbone + checkpoint interpolation
+└── 0.12440 target / 0.55561 source mAP50-95
+
+CURRENT CONSTRAINT
+├── plastic labels span only two redundant Blueye videos
+├── multiple current-data interventions exhausted
+└── scene-diverse Blueye + FiFish capture requested
 ```
+
+The private collaboration workspace records protocols, audits, metrics, hashes,
+and curated evidence. Data, model weights, and correspondence remain outside
+the public profile; corrected reporting tests stay sealed during
+adaptation-method selection.
 
 </details>
 
-<p align="center">
-  <sub>
-    The active workspace is access-controlled while collaboration artifacts
-    are separated from public outputs. Smoke-test metrics are never presented
-    as final scientific results.
-  </sub>
-</p>
+<br/>
+
+<a id="selected-work"></a>
+<p align="center"><sub>03 / SELECTED WORK</sub></p>
+
+<h2 align="center">Evidence first. Source where public.</h2>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="#flagship-result">🌊 LABUST Underwater Detection ↑</a></h3>
+      <code>RESEARCH RESULT · PRIVATE COLLABORATION</code>
+      <br/><br/>
+      YOLO26 transfer learning, dataset forensics, whole-video evaluation,
+      public replay, checkpoint interpolation, per-class gates, and a complete
+      reproducibility trail.
+      <br/><br/>
+      <sub>PYTHON · PYTORCH · ULTRALYTICS · OPENCV</sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/hamzamaverick51/Dual-Finance-Tool">💳 Dual Finance Tool ↗</a></h3>
+      <code>INTERNSHIP BUILD · OPEN SOURCE</code>
+      <br/><br/>
+      Tax and installment planning through enterprise financial APIs, secure
+      user history, and Gemini-generated explanations, with a documented AWS
+      serverless deployment path.
+      <br/><br/>
+      <sub>FASTAPI · SUPABASE · GEMINI · AWS</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/hamzamaverick51/GradientVision">📐 GradientVision ↗</a></h3>
+      <code>SHIPPED · OPEN SOURCE</code>
+      <br/><br/>
+      Turns natural-language mathematical questions into inspectable symbolic
+      and numerical computation, critical-point classification, gradient fields,
+      and 2D/3D visualizations.
+      <br/><br/>
+      <sub>PYTHON · SYMPY · NUMPY · SCIKIT-LEARN · PLOTLY</sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/hamzamaverick51/Ballistic-Drift">🔥 Ballistic Drift ↗</a></h3>
+      <code>SHIPPED · OPEN SOURCE</code>
+      <br/><br/>
+      A systems-heavy Pong reinvention with adaptive CPU difficulty, local PvP,
+      particle and ripple effects, screen shake, reactive weather, audio, and
+      persistent high scores.
+      <br/><br/>
+      <sub>C++ · RAYLIB · GAME AI · REAL-TIME GRAPHICS</sub>
+    </td>
+  </tr>
+</table>
+
+### Engineering case study
+
+At **NETSOL Technologies**, I built the Dual Finance Tool across backend APIs,
+authentication, persistence, AI explanations, containers, and cloud deployment
+planning. At **FAST-NUCES**, I helped build **ARCH**, a React/Vite student portal
+unifying registration, grading, attendance, role-based access, and approval
+workflows previously spread across multiple systems. More context is available
+on [LinkedIn](https://www.linkedin.com/in/hamza-raheel-829001319/).
 
 <br/>
 
-<p align="center"><sub>03 / ENGINEERING BACKBONE</sub></p>
+<p align="center"><sub>04 / RESEARCH ATLAS</sub></p>
+
+<h2 align="center">One question across four failure modes.</h2>
+
+<p align="center">
+  How do we identify, measure, and correct failures that clean aggregate
+  benchmarks hide?
+</p>
+
+<div align="center">
+  <img src="./assets/research-panorama-v1.png" width="100%" alt="Research panorama connecting underwater vision, controller analysis, representation geometry, and language-model unlearning" />
+</div>
+
+<details>
+  <summary><strong>Open the active research atlas</strong></summary>
+  <br/>
+
+| Failure mode | Research thread | Current status |
+|---|---|---|
+| **Domain shift** | Pool-to-sea underwater object detection | `VALID METHOD · DATA ACQUISITION` |
+| **Representation error** | Controlled Earth / space-analog data-mixture sweep | `SWEEP DELIVERED` |
+| **Stability** | Controller proof auditing, simulation, and parameter regions | `ARTIFACTS UNDER REVIEW` |
+| **Selective forgetting** | Representation, semantic, and surface adjacency in LM unlearning | `STUDY DESIGN` |
+
+These are active research threads, not publication claims. Each stays explicitly
+qualified by its experimental status.
+
+</details>
+
+<br/>
+
+<p align="center"><sub>05 / ENGINEERING BACKBONE</sub></p>
 
 <h2 align="center">Research ideas matter when the system can ship.</h2>
 
@@ -214,43 +256,25 @@ NEXT TRANSMISSION
   <tr>
     <td width="50%" valign="top">
       <h3>NETSOL Technologies</h3>
-      <strong>Software Engineering Intern · 2025</strong>
+      <strong>AI &amp; Machine Learning Intern · 2025</strong>
       <br/><br/>
-      Built serverless microservices and REST APIs, integrated authentication
-      and PostgreSQL data flows, containerized applications, and deployed
-      frontend infrastructure through AWS.
+      Built across FastAPI, REST integrations, Supabase authentication and
+      PostgreSQL persistence, Gemini assistance, Docker, and AWS serverless
+      infrastructure.
     </td>
     <td width="50%" valign="top">
-      <h3>FAST-NUCES</h3>
+      <h3>FAST-NUCES Lahore</h3>
       <strong>BS Computer Science · 2024–2028</strong>
       <br/><br/>
-      Building foundations across algorithms, artificial intelligence,
-      operating systems, databases, software design, calculus, and linear
-      algebra.
+      Building foundations across algorithms, AI, operating systems, databases,
+      software design, calculus, and linear algebra—and applying them in systems
+      that can be inspected and tested.
     </td>
   </tr>
 </table>
 
-### Selected systems
-
-| Build | Technical center | Why it mattered |
-|---|---|---|
-| **GradientVision** | Symbolic-numeric methods · critical-point classification · 2D/3D visualization | Turned natural-language mathematical queries into inspectable computation rather than opaque answers. |
-| **Neural network from scratch** | Forward/backpropagation · optimization · classification | Implemented the learning machinery without an ML framework and reached 90% test accuracy. |
-| **Dual Finance Tool** | FastAPI · Supabase · Gemini · AWS serverless | Connected business logic, authentication, persistence, AI assistance, and deployment in one system. |
-| **ARCH Portal** | React · Node.js · databases · system design | Designed a role-aware interface over fragmented academic workflows and schemas. |
-| **Vessyn** | Product architecture · applied AI · recommendation systems | Exploring AI-assisted wardrobe intelligence as a founder and product builder. |
-
 <p align="center">
-  <a href="https://hamzamaverick51.github.io">
-    <img src="https://img.shields.io/badge/ENTER_THE_FULL_PORTFOLIO-102B3F?style=for-the-badge&logo=vercel&logoColor=FFFFFF" alt="Explore the full portfolio" />
-  </a>
-</p>
-
-<h3 align="center">Technical instrumentation</h3>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,opencv,sklearn,numpy,fastapi,react,ts,nodejs,postgres,supabase,aws,docker,git,linux&perline=15" alt="Python, PyTorch, OpenCV, scikit-learn, NumPy, FastAPI, React, TypeScript, Node.js, PostgreSQL, Supabase, AWS, Docker, Git, and Linux" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,pytorch,opencv,sklearn,numpy,fastapi,react,ts,nodejs,postgres,supabase,aws,docker,git,linux&perline=8" alt="Python, C++, PyTorch, OpenCV, scikit-learn, NumPy, FastAPI, React, TypeScript, Node.js, PostgreSQL, Supabase, AWS, Docker, Git, and Linux" />
 </p>
 
 <details>
@@ -269,55 +293,17 @@ software_systems:
   - TypeScript, React, Node.js
   - PostgreSQL, Supabase, MongoDB
   - Docker, Linux, AWS serverless infrastructure
+
+systems_programming:
+  - C++, Raylib, SFML
+  - collision systems, game AI, input, audio, and real-time effects
 ```
 
 </details>
 
 <br/>
 
-<p align="center"><sub>04 / TRAJECTORY</sub></p>
-
-<h2 align="center">Production foundations. Research direction.</h2>
-
-<table>
-  <tr>
-    <td align="center" width="20%">
-      <h3>2023</h3>
-      <sub>IT INTERNSHIP</sub><br/>
-      Valeem Online
-    </td>
-    <td align="center" width="20%">
-      <h3>2024</h3>
-      <sub>BS COMPUTER SCIENCE</sub><br/>
-      FAST-NUCES
-    </td>
-    <td align="center" width="20%">
-      <h3>2025</h3>
-      <sub>SOFTWARE ENGINEERING</sub><br/>
-      NETSOL
-    </td>
-    <td align="center" width="20%">
-      <h3>2026</h3>
-      <sub>RESEARCH THREADS</sub><br/>
-      Four countries
-    </td>
-    <td align="center" width="20%">
-      <h3>2028</h3>
-      <sub>GRADUATION TARGET</sub><br/>
-      Next frontier
-    </td>
-  </tr>
-</table>
-
-<blockquote>
-  <strong>Long-term direction:</strong> research engineering at the edge of
-  autonomous systems, machine learning, and deployment—especially where
-  failures matter and evaluation must survive contact with reality.
-</blockquote>
-
-<br/>
-
-<p align="center"><sub>05 / OPERATING PRINCIPLES</sub></p>
+<p align="center"><sub>06 / OPERATING PRINCIPLES</sub></p>
 
 <h2 align="center">Ambitious questions. Precise claims.</h2>
 
@@ -329,7 +315,7 @@ software_systems:
       ✅ Reproducible runs before screenshots<br/>
       ✅ Failure analysis before architecture shopping<br/>
       ✅ Clean interfaces before clever abstractions<br/>
-      ✅ Work that another person can inspect
+      ✅ Work another person can inspect
     </td>
     <td width="50%" valign="top">
       <h3>Actively avoid</h3>
@@ -354,17 +340,16 @@ software_systems:
 
 ## Let’s build something that has to work.
 
-I’m interested in autonomous systems, scientific machine learning, computer
-vision in difficult environments, and evaluation that survives contact with
-reality.
+I’m interested in computer vision in difficult environments, scientific machine
+learning, autonomous systems, and evaluation that survives contact with reality.
 
-[**Portfolio**](https://hamzamaverick51.github.io)
+[**GitHub**](https://github.com/hamzamaverick51?tab=repositories)
 &nbsp;·&nbsp;
 [**LinkedIn**](https://www.linkedin.com/in/hamza-raheel-829001319/)
 &nbsp;·&nbsp;
 [**Email**](mailto:hamzaprofessionalwork@gmail.com)
 
-<br/><br/>
+<br/>
 
 `Lahore, Pakistan` · `research with receipts` · `systems that ship`
 

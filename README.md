@@ -9,8 +9,8 @@
   <a href="#flagship-result">
     <img src="https://img.shields.io/badge/FLAGSHIP_RESULT-071A2B?style=for-the-badge&logo=target&logoColor=27C7A8" alt="Flagship result" />
   </a>
-  <a href="#selected-work">
-    <img src="https://img.shields.io/badge/SELECTED_WORK-071A2B?style=for-the-badge&logo=github&logoColor=3BE8FF" alt="Selected work" />
+  <a href="#professional-collaborations">
+    <img src="https://img.shields.io/badge/PROFESSIONAL_WORK-071A2B?style=for-the-badge&logo=protonmail&logoColor=3BE8FF" alt="Professional and applied work" />
   </a>
   <a href="https://www.linkedin.com/in/hamza-raheel-829001319/">
     <img src="https://img.shields.io/badge/LINKEDIN-071A2B?style=for-the-badge&logo=linkedin&logoColor=3BE8FF" alt="LinkedIn" />
@@ -206,18 +206,77 @@ adaptation-method selection.
   </tr>
 </table>
 
-### Engineering case study
+<br/>
 
-At **NETSOL Technologies**, I built the Dual Finance Tool across backend APIs,
-authentication, persistence, AI explanations, containers, and cloud deployment
-planning. At **FAST-NUCES**, I helped build **ARCH**, a React/Vite student portal
-unifying registration, grading, attendance, role-based access, and approval
-workflows previously spread across multiple systems. More context is available
-on [LinkedIn](https://www.linkedin.com/in/hamza-raheel-829001319/).
+<a id="professional-collaborations"></a>
+<p align="center"><sub>04 / PROFESSIONAL + APPLIED WORK</sub></p>
+
+<h2 align="center">Technical audits. Production-minded delivery.</h2>
+
+<p align="center">
+  Public-safe summaries of work completed across a technical research audit,
+  an industry internship, and team software engineering.
+</p>
+
+<table>
+  <tr>
+    <td width="100%" valign="top">
+      <h3><a href="https://www.mdpi.com/2076-3417/11/9/3785">🤖 Packet-Loss Robustness in Multi-Agent Control ↗</a></h3>
+      <strong>Research audit for a Malaysia-based controls collaboration</strong>
+      <br/><br/>
+      <code>PROOF AUDIT · SIMULATION-BACKED</code>
+      <br/><br/>
+      Extended the BET-SPSA formulation published by Nohaidda Sariff and Zool
+      Hilmi Ismail (UTM): reconstructed the rendezvous controller, mapped every
+      proof dependency on transmitted quantities, and ran Bernoulli reliability
+      sweeps. Neighbour loss appeared bounded with reliability-dependent
+      degradation; broadcast loss broke the SPSA measurement pair and required
+      a protocol change. A paired-skip fallback restored graceful degradation,
+      while effective gain <code>k × d̄</code> emerged as the controlling
+      robustness parameter.
+      <br/><br/>
+      <sub>NUMPY · SPSA · STOCHASTIC CONTROL · PACKET-LOSS SIMULATION</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>💼 NETSOL Technologies</h3>
+      <strong>AI &amp; Machine Learning Intern · 2025</strong>
+      <br/><br/>
+      <code>INDUSTRY INTERNSHIP · END-TO-END BUILD</code>
+      <br/><br/>
+      Built the Dual Finance Tool across backend APIs, enterprise finance
+      integrations, Supabase authentication and persistence, Gemini-generated
+      explanations, Docker, and an AWS serverless deployment path.
+      <br/><br/>
+      <sub>FASTAPI · SUPABASE · GEMINI · DOCKER · AWS</sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🏫 ARCH Student Portal</h3>
+      <strong>FAST-NUCES team software project · 2026</strong>
+      <br/><br/>
+      <code>TEAM SYSTEM · FULL-STACK DELIVERY</code>
+      <br/><br/>
+      Helped build a React/Vite portal unifying registration, grading,
+      attendance, role-based access, and approval workflows previously spread
+      across multiple university systems, backed by live REST APIs and database
+      pipelines.
+      <br/><br/>
+      <sub>REACT · VITE · NODE.JS · MONGODB / SQL · RBAC</sub>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <sub>
+    These descriptions state the work performed; they do not imply publication,
+    institutional endorsement, or a completed theorem.
+  </sub>
+</p>
 
 <br/>
 
-<p align="center"><sub>04 / RESEARCH ATLAS</sub></p>
+<p align="center"><sub>05 / RESEARCH ATLAS</sub></p>
 
 <h2 align="center">One question across four failure modes.</h2>
 
@@ -237,8 +296,8 @@ on [LinkedIn](https://www.linkedin.com/in/hamza-raheel-829001319/).
 | Failure mode | Research thread | Current status |
 |---|---|---|
 | **Domain shift** | Pool-to-sea underwater object detection | `VALID METHOD · DATA ACQUISITION` |
-| **Representation error** | Controlled Earth / space-analog data-mixture sweep | `SWEEP DELIVERED` |
-| **Stability** | Controller proof auditing, simulation, and parameter regions | `ARTIFACTS UNDER REVIEW` |
+| **Representation error** | Controlled Earth / space-analog data-mixture sweep | `61-ROW SWEEP DELIVERED` |
+| **Stability** | Controller proof auditing, packet-loss simulation, and protocol repair | `AUDIT DELIVERED` |
 | **Selective forgetting** | Representation, semantic, and surface adjacency in LM unlearning | `STUDY DESIGN` |
 
 These are active research threads, not publication claims. Each stays explicitly
@@ -248,30 +307,9 @@ qualified by its experimental status.
 
 <br/>
 
-<p align="center"><sub>05 / ENGINEERING BACKBONE</sub></p>
+<p align="center"><sub>06 / TECHNICAL BACKBONE</sub></p>
 
-<h2 align="center">Research ideas matter when the system can ship.</h2>
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>NETSOL Technologies</h3>
-      <strong>AI &amp; Machine Learning Intern · 2025</strong>
-      <br/><br/>
-      Built across FastAPI, REST integrations, Supabase authentication and
-      PostgreSQL persistence, Gemini assistance, Docker, and AWS serverless
-      infrastructure.
-    </td>
-    <td width="50%" valign="top">
-      <h3>FAST-NUCES Lahore</h3>
-      <strong>BS Computer Science · 2024–2028</strong>
-      <br/><br/>
-      Building foundations across algorithms, AI, operating systems, databases,
-      software design, calculus, and linear algebra—and applying them in systems
-      that can be inspected and tested.
-    </td>
-  </tr>
-</table>
+<h2 align="center">One stack across research and product engineering.</h2>
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,cpp,pytorch,opencv,sklearn,numpy,fastapi,react,ts,nodejs,postgres,supabase,aws,docker,git,linux&perline=8" alt="Python, C++, PyTorch, OpenCV, scikit-learn, NumPy, FastAPI, React, TypeScript, Node.js, PostgreSQL, Supabase, AWS, Docker, Git, and Linux" />
@@ -303,7 +341,7 @@ systems_programming:
 
 <br/>
 
-<p align="center"><sub>06 / OPERATING PRINCIPLES</sub></p>
+<p align="center"><sub>07 / OPERATING PRINCIPLES</sub></p>
 
 <h2 align="center">Ambitious questions. Precise claims.</h2>
 

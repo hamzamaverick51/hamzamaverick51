@@ -211,33 +211,50 @@ adaptation-method selection.
 <a id="professional-collaborations"></a>
 <p align="center"><sub>04 / PROFESSIONAL + APPLIED WORK</sub></p>
 
-<h2 align="center">Technical audits. Production-minded delivery.</h2>
+<h2 align="center">Control reliability. Production systems.</h2>
 
 <p align="center">
   Public-safe summaries of work completed across a technical research audit,
   an industry internship, and team software engineering.
 </p>
 
+<h3 align="center"><a href="https://www.mdpi.com/2076-3417/11/9/3785">🤖 Packet-Loss Robustness in Multi-Agent Control ↗</a></h3>
+
+<p align="center">
+  <strong>Research audit for a Malaysia-based controls collaboration</strong>
+  <br/><br/>
+  <code>PROOF AUDIT · SIMULATION-BACKED · PROTOCOL REPAIR</code>
+</p>
+
+<div align="center">
+  <img src="./assets/bet-spsa-packet-loss.svg" width="100%" alt="BET-SPSA packet-loss audit showing bounded neighbour-channel degradation, structural broadcast-channel failure, a pair-validity repair, and effective consensus gain as the robustness parameter" />
+</div>
+
 <table>
   <tr>
-    <td width="100%" valign="top">
-      <h3><a href="https://www.mdpi.com/2076-3417/11/9/3785">🤖 Packet-Loss Robustness in Multi-Agent Control ↗</a></h3>
-      <strong>Research audit for a Malaysia-based controls collaboration</strong>
-      <br/><br/>
-      <code>PROOF AUDIT · SIMULATION-BACKED</code>
-      <br/><br/>
+    <td width="50%" valign="top">
+      <h3>What I built</h3>
       Extended the BET-SPSA formulation published by Nohaidda Sariff and Zool
-      Hilmi Ismail (UTM): reconstructed the rendezvous controller, mapped every
-      proof dependency on transmitted quantities, and ran Bernoulli reliability
-      sweeps. Neighbour loss appeared bounded with reliability-dependent
-      degradation; broadcast loss broke the SPSA measurement pair and required
-      a protocol change. A paired-skip fallback restored graceful degradation,
-      while effective gain <code>k × d̄</code> emerged as the controlling
-      robustness parameter.
-      <br/><br/>
-      <sub>NUMPY · SPSA · STOCHASTIC CONTROL · PACKET-LOSS SIMULATION</sub>
+      Hilmi Ismail (UTM). I reconstructed the rendezvous controller, mapped each
+      proof dependency on transmitted quantities, and built Bernoulli
+      reliability sweeps across both communication channels and multiple
+      gain/topology settings.
+    </td>
+    <td width="50%" valign="top">
+      <h3>What the evidence changed</h3>
+      Neighbour loss behaved like a bounded reliability-dependent perturbation;
+      broadcast loss destroyed the SPSA measurement pair. A paired-skip policy
+      restored graceful degradation, and effective gain <code>k × d̄</code>
+      emerged as the controlling robustness parameter.
     </td>
   </tr>
+</table>
+
+<p align="center"><sub>NUMPY · SPSA · STOCHASTIC CONTROL · PACKET-LOSS SIMULATION</sub></p>
+
+<br/>
+
+<table>
   <tr>
     <td width="50%" valign="top">
       <h3>💼 NETSOL Technologies</h3>

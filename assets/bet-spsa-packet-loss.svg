@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  <title id="title">BET-SPSA packet-loss reliability audit</title>
+  <desc id="desc">A sonar-styled summary showing bounded neighbour-channel degradation, structural broadcast-channel failure, a pair-validity protocol repair, and effective consensus gain as the robustness control parameter.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#03101d"/>
+      <stop offset="0.55" stop-color="#071b2b"/>
+      <stop offset="1" stop-color="#0a2935"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#3be8ff" stroke-opacity="0.05"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="688" rx="24" fill="url(#bg)" stroke="#16829a" stroke-width="2"/>
+  <rect x="2" y="2" width="1196" height="686" rx="23" fill="url(#grid)"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="54" y="54" fill="#27c7a8" font-size="14" font-weight="700" letter-spacing="5">CONTROL RELIABILITY / FIELD AUDIT</text>
+    <text x="54" y="96" fill="#f2f8fb" font-size="30" font-weight="800">PACKET LOSS DOES NOT FAIL ONE WAY</text>
+    <text x="54" y="126" fill="#9bdff2" font-size="14" letter-spacing="1.3">BET-SPSA MULTI-AGENT RENDEZVOUS · TWO CHANNELS · TWO FAILURE MODES</text>
+
+    <g opacity="0.2" fill="none" stroke="#3be8ff">
+      <circle cx="1058" cy="82" r="30"/><circle cx="1058" cy="82" r="58"/><circle cx="1058" cy="82" r="86"/>
+      <path d="M960 82h196M1058-16v196M1058 82l73-43"/>
+    </g>
+    <circle cx="1117" cy="47" r="5" fill="#3be8ff" filter="url(#glow)"/>
+
+    <!-- Channel cards -->
+    <rect x="54" y="158" width="528" height="238" rx="16" fill="#061723" stroke="#27c7a8" stroke-width="2"/>
+    <rect x="618" y="158" width="528" height="238" rx="16" fill="#061723" stroke="#ff6b67" stroke-width="2"/>
+
+    <text x="80" y="191" fill="#27c7a8" font-size="12" font-weight="700" letter-spacing="3">NEIGHBOUR EXCHANGE · EQ. 13</text>
+    <rect x="80" y="210" width="204" height="26" rx="13" fill="#0d433e"/>
+    <text x="182" y="228" fill="#83f4de" font-size="11" font-weight="700" text-anchor="middle">BOUNDED PERTURBATION</text>
+
+    <g stroke="#27c7a8" stroke-width="2" fill="#071b2b">
+      <path d="M93 270L151 251L207 281L265 252" stroke-dasharray="7 6" opacity="0.75"/>
+      <circle cx="93" cy="270" r="9"/><circle cx="151" cy="251" r="9"/><circle cx="207" cy="281" r="9"/><circle cx="265" cy="252" r="9"/>
+    </g>
+    <text x="80" y="319" fill="#f2f8fb" font-size="23" font-weight="800">p = 0.15 · ALL RUNS CONVERGED</text>
+    <text x="80" y="346" fill="#9bdff2" font-size="14">p = 0.10 · 90% converged</text>
+    <text x="80" y="375" fill="#7fa6b7" font-size="12">cost paid mainly in time: 272 → 5,524 iterations</text>
+
+    <text x="644" y="191" fill="#ff8b87" font-size="12" font-weight="700" letter-spacing="3">GLOBAL BROADCAST · EQ. 7</text>
+    <rect x="644" y="210" width="183" height="26" rx="13" fill="#4a252d"/>
+    <text x="735" y="228" fill="#ffc0bd" font-size="11" font-weight="700" text-anchor="middle">STRUCTURAL BREAK</text>
+
+    <g>
+      <circle cx="681" cy="266" r="12" fill="#ff6b67"/>
+      <path d="M702 266h72" stroke="#ff6b67" stroke-width="3" stroke-dasharray="8 6"/>
+      <path d="M780 253l18 13-18 13" fill="none" stroke="#ff6b67" stroke-width="3"/>
+      <circle cx="823" cy="266" r="12" fill="#071b2b" stroke="#ff6b67" stroke-width="2"/>
+      <path d="M814 257l18 18M832 257l-18 18" stroke="#ff6b67" stroke-width="3"/>
+    </g>
+    <text x="644" y="319" fill="#f2f8fb" font-size="23" font-weight="800">HOLD DIVERGED AT pB = 0.90</text>
+    <text x="644" y="346" fill="#ffaaa6" font-size="14">agents still agree: spread stays ≈ 0.92</text>
+    <text x="644" y="375" fill="#7fa6b7" font-size="12">but target error grows 1.38 → 81.70 · wrong rendezvous point</text>
+
+    <!-- Repair strip -->
+    <rect x="54" y="420" width="1092" height="92" rx="15" fill="#071723" stroke="#16829a"/>
+    <text x="78" y="449" fill="#9bdff2" font-size="11" font-weight="700" letter-spacing="3">PROTOCOL REPAIR</text>
+    <rect x="78" y="463" width="126" height="28" rx="6" fill="#0b3041" stroke="#3be8ff"/>
+    <text x="141" y="482" fill="#f2f8fb" font-size="11" font-weight="700" text-anchor="middle">EVEN B(t)</text>
+    <text x="218" y="482" fill="#3be8ff" font-size="18">+</text>
+    <rect x="242" y="463" width="126" height="28" rx="6" fill="#0b3041" stroke="#3be8ff"/>
+    <text x="305" y="482" fill="#f2f8fb" font-size="11" font-weight="700" text-anchor="middle">ODD B(t+1)</text>
+    <text x="385" y="482" fill="#3be8ff" font-size="18">→</text>
+    <rect x="413" y="463" width="198" height="28" rx="6" fill="#0d433e" stroke="#27c7a8"/>
+    <text x="512" y="482" fill="#83f4de" font-size="11" font-weight="700" text-anchor="middle">PAIR VALID? APPLY UPDATE</text>
+    <text x="629" y="482" fill="#3be8ff" font-size="18">/</text>
+    <rect x="651" y="463" width="194" height="28" rx="6" fill="#4a252d" stroke="#ff6b67"/>
+    <text x="748" y="482" fill="#ffc0bd" font-size="11" font-weight="700" text-anchor="middle">MISMATCH? SKIP CYCLE</text>
+    <text x="874" y="476" fill="#f2f8fb" font-size="13" font-weight="700">GRACEFUL TO ≈ pB 0.50</text>
+    <text x="874" y="494" fill="#7fa6b7" font-size="10">detecting pair validity is not optional</text>
+
+    <!-- Gain strip -->
+    <text x="54" y="551" fill="#27c7a8" font-size="10" font-weight="700" letter-spacing="2.2">ROBUSTNESS CONTROL · EFFECTIVE CONSENSUS GAIN k × d̄ · ERROR FLOOR AT p = 0.10</text>
+    <line x1="54" y1="646" x2="1146" y2="646" stroke="#16829a"/>
+
+    <g>
+      <rect x="110" y="617" width="210" height="29" rx="5" fill="#27c7a8"/>
+      <text x="100" y="637" fill="#9bdff2" font-size="12" text-anchor="end">k×d̄ 0.14</text>
+      <text x="330" y="637" fill="#83f4de" font-size="13" font-weight="800">&lt; 2</text>
+
+      <rect x="468" y="588" width="310" height="58" rx="5" fill="#16829a"/>
+      <text x="458" y="622" fill="#9bdff2" font-size="12" text-anchor="end">k×d̄ 0.28</text>
+      <text x="788" y="622" fill="#9bdff2" font-size="13" font-weight="800">≈ 6.8</text>
+
+      <rect x="916" y="568" width="174" height="78" rx="5" fill="#ff6b67"/>
+      <text x="906" y="612" fill="#9bdff2" font-size="12" text-anchor="end">k×d̄ 0.56</text>
+      <text x="1100" y="612" fill="#ffc0bd" font-size="13" font-weight="800">≈ 16.3</text>
+    </g>
+
+    <text x="54" y="674" fill="#6f93a3" font-size="10" letter-spacing="1.3">SIMULATION-BACKED FIRST-PASS PROOF AUDIT · RECONSTRUCTED CONTROLLER · NOT A COMPLETED RE-DERIVATION</text>
+  </g>
+</svg>

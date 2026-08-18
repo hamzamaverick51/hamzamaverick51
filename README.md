@@ -3,14 +3,11 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/hamzamaverick51?tab=repositories">
-    <img src="https://img.shields.io/badge/GITHUB_REPOS-071A2B?style=for-the-badge&logo=github&logoColor=3BE8FF" alt="GitHub repositories" />
+  <a href="#research">
+    <img src="https://img.shields.io/badge/RESEARCH-071A2B?style=for-the-badge&logo=target&logoColor=27C7A8" alt="Research" />
   </a>
-  <a href="#flagship-result">
-    <img src="https://img.shields.io/badge/FLAGSHIP_RESULT-071A2B?style=for-the-badge&logo=target&logoColor=27C7A8" alt="Flagship result" />
-  </a>
-  <a href="#professional-collaborations">
-    <img src="https://img.shields.io/badge/PROFESSIONAL_WORK-071A2B?style=for-the-badge&logo=protonmail&logoColor=3BE8FF" alt="Professional and applied work" />
+  <a href="#selected-work">
+    <img src="https://img.shields.io/badge/SELECTED_WORK-071A2B?style=for-the-badge&logo=github&logoColor=3BE8FF" alt="Selected work" />
   </a>
   <a href="https://www.linkedin.com/in/hamza-raheel-829001319/">
     <img src="https://img.shields.io/badge/LINKEDIN-071A2B?style=for-the-badge&logo=linkedin&logoColor=3BE8FF" alt="LinkedIn" />
@@ -20,12 +17,13 @@
   </a>
 </p>
 
-<h3 align="center">Research engineer in training. Systems builder in practice.</h3>
+<h3 align="center">Research engineering for difficult data and systems that have to work.</h3>
 
 <p align="center">
-  I build machine-learning experiments and software systems for the point where
-  clean benchmarks meet messy reality—domain shift, hidden leakage, constrained
-  data, and deployment.
+  I work across machine-learning evaluation, computer vision, reproducible
+  experimentation, and full-stack software. I am most interested in the point
+  where a clean benchmark stops being trustworthy: domain shift, leakage,
+  ambiguous metrics, constrained data, and deployment.
   <br/><br/>
   <strong>BS Computer Science · FAST-NUCES Lahore · Class of 2028</strong>
 </p>
@@ -35,37 +33,44 @@
   &nbsp;
   <kbd>COMPUTER VISION</kbd>
   &nbsp;
-  <kbd>APPLIED ML</kbd>
+  <kbd>LLM EVALUATION</kbd>
   &nbsp;
   <kbd>SOFTWARE SYSTEMS</kbd>
 </p>
 
 > **Open to:** research collaborations, research-engineering internships, and
-> difficult ML systems where evaluation and reliability actually matter.
+> ML systems work where evaluation and reliability matter.
 
 <br/>
 
-<p align="center"><sub>01 / CURRENT SIGNAL</sub></p>
+<a id="research"></a>
+<p align="center"><sub>01 / RESEARCH</sub></p>
 
-<h2 align="center">Build → measure → learn → ship.</h2>
+<h2 align="center">Two active tracks. One standard: evidence before confidence.</h2>
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🌊 Working on now</h3>
-      <strong>Underwater computer vision under domain shift</strong>
+      <h3>LABUST / University of Zagreb FER</h3>
+      <strong>Underwater detection under domain shift</strong>
       <br/><br/>
-      A validated retention-constrained detector is complete. The present
-      bottleneck is scene-diverse target-native plastic data—not another blind
-      hyperparameter sweep.
+      Rebuilt a leakage-prone evaluation into a video-disjoint benchmark,
+      measured annotation efficiency across five budgets and three seeds, and
+      developed retention-constrained adaptation that improves target-domain
+      performance without discarding source capability.
+      <br/><br/>
+      <code>ACTIVE RESEARCH · COMPUTER VISION</code>
     </td>
     <td width="50%" valign="top">
-      <h3>🧭 Operating method</h3>
-      <strong>Evidence before confidence</strong>
+      <h3>Universidad Nacional Autónoma de México</h3>
+      <strong>Evaluation foundations for LLM unlearning</strong>
       <br/><br/>
-      Predeclare gates, separate videos instead of random frames, retain source
-      capability, reject misleading aggregate wins, and leave an auditable path
-      from claim to artifact.
+      Auditing datasets, scorers, and proximity measures before selecting an
+      unlearning experiment. The current work separates lexical, syntactic,
+      semantic, and neural-representation claims and preserves failed
+      construct checks instead of tuning around them.
+      <br/><br/>
+      <code>ACTIVE RESEARCH · LLM EVALUATION</code>
     </td>
   </tr>
 </table>
@@ -73,258 +78,229 @@
 <p align="center">
   <code>Lahore, Pakistan</code>
   &nbsp;·&nbsp;
-  <code>research with receipts</code>
+  <code>reproducible experiments</code>
   &nbsp;·&nbsp;
-  <code>systems that ship</code>
+  <code>public-safe reporting</code>
 </p>
 
 <br/>
 
-<a id="flagship-result"></a>
-<p align="center"><sub>02 / FLAGSHIP RESULT</sub></p>
+<p align="center"><sub>02 / LABUST FIELD RESULT</sub></p>
 
 <h2 align="center">Underwater detection that survives pool → sea.</h2>
 
 <p align="center">
-  In collaboration with <strong>LABUST / University of Zagreb FER</strong>,
-  I am extending an underwater PPE and debris detector beyond its original
-  pool-domain evaluation.
+  The collaboration began with a detector that performed well on its released
+  split but did not generalize to the outdoor sea-floor pool. The first task
+  was therefore not architecture selection; it was rebuilding the measuring
+  instrument.
 </p>
 
 <div align="center">
-  <img src="./assets/labust-transfer-result.svg" width="100%" alt="LABUST domain-transfer result: accepted adaptation improved target validation mAP50-95 from 0.0454 to 0.1244 while retaining 95.45 percent of the selected source score" />
+  <img src="./assets/labust-transfer-result.svg" width="100%" alt="LABUST result showing the first accepted eight-frame domain adaptation and its source-retention gate" />
 </div>
 
-The accepted method uses only **eight target training frames**, class-balanced
+The first accepted adaptation used **eight target frames**, class-balanced
 public replay, a frozen backbone, and deterministic checkpoint interpolation.
-It improves target validation mAP50-95 from **0.0454 to 0.1244 (2.74×)** while
-retaining **0.5556 source validation mAP50-95**.
+It raised corrected target validation mAP50-95 from **0.0454 to 0.1244** while
+retaining **0.5556** on the source validation domain.
 
-The highest raw target aggregate was **0.16048**, but I rejected that branch:
-plastic mAP50-95 was only **0.00001050**, below the predeclared class gate. The
-accepted result is the strongest tested candidate that passed every gate it was
-eligible to face—not merely the largest convenient number.
-
-<p align="center">
-  <a href="#selected-work">
-    <img src="https://img.shields.io/badge/EXPLORE_SELECTED_WORK-0B3142?style=for-the-badge&logo=github&logoColor=3BE8FF" alt="Explore selected work" />
-  </a>
-  <a href="mailto:hamzaprofessionalwork@gmail.com">
-    <img src="https://img.shields.io/badge/ASK_ABOUT_THE_RESEARCH-0B3142?style=for-the-badge&logo=gmail&logoColor=27C7A8" alt="Ask Hamza about the underwater detection research" />
-  </a>
-</p>
+The later three-seed study gives the defensible headline:
+**0.0454 → 0.1427 ± 0.0152 mAP50-95**, roughly **3.1×**. A separate 15-run
+annotation-efficiency study found the strongest target-domain mean at
+**128 annotated frames: 0.2015 ± 0.0042**. That model did not clear the fixed
+source-retention gate, so it was reported as an efficiency result—not promoted
+as the deployable champion.
 
 <details>
   <summary><strong>Open the research record</strong></summary>
   <br/>
 
 ```text
-PUBLIC BASELINE
-├── TrashCan + SeaClear
-├── 12,953 train / 2,869 validation images
-└── 100 epochs complete at 0.62437 mAP50-95
-
 DATA AUDIT
 ├── 2,646 delivered exports
-├── 1,206 distinct source frames
-└── augmentation + sequence leakage identified
+├── 1,206 distinct source frames across 17 videos
+└── 97.2% of validation frames were near adjacent training frames
 
 CORRECTED EVALUATION
-├── deduplicated by source frame
-├── split by complete source video
-└── 0 / 17 videos crossing corrected splits
+├── one canonical export per source frame
+├── complete-video split assignment
+└── zero video overlap across train, validation, and sealed tests
 
-ACCEPTED ADAPTATION
-├── 8 local frames + class-balanced public replay
-├── frozen backbone + checkpoint interpolation
-└── 0.12440 target / 0.55561 source mAP50-95
+ADAPTATION
+├── target labels + class-balanced public replay
+├── frozen-backbone training + checkpoint interpolation
+└── target improvement gated by source retention
 
 CURRENT CONSTRAINT
-├── plastic labels span only two redundant Blueye videos
-├── multiple current-data interventions exhausted
-└── scene-diverse Blueye + FiFish capture requested
+├── plastic remains 0.0000 across all annotation budgets
+├── existing labels come from two redundant scenes
+└── scene-diverse capture is the identified data dependency
 ```
 
-The private collaboration workspace records protocols, audits, metrics, hashes,
-and curated evidence. Data, model weights, and correspondence remain outside
-the public profile; corrected reporting tests stay sealed during
-adaptation-method selection.
+The private workspace contains protocols, hashes, metrics, failure records,
+and curated evidence. Images, model weights, correspondence, and sealed-test
+material remain outside this public profile.
+
+</details>
+
+<br/>
+
+<p align="center"><sub>03 / UNAM EVALUATION FOUNDATIONS</sub></p>
+
+<h2 align="center">Define “nearby” before measuring selective forgetting.</h2>
+
+<p align="center">
+  The UNAM collaboration examines how forgetting one fact can affect nearby
+  retained knowledge. The current phase is deliberately definitions-first:
+  audit the evidence, validate the measurements, and only then choose a model,
+  benchmark, intervention, and estimand.
+</p>
+
+<div align="center">
+  <img src="./assets/unam-unlearning-audit.svg" width="100%" alt="UNAM LLM-unlearning evaluation map covering a 1,733-document audit, lexical through neural proximity measures, controlled construct validation, and a definitions-first decision gate" />
+</div>
+
+The completed measurement sprint compares Jaccard, character and token
+n-gram TF-IDF, LSA, and pinned MiniLM encodings across **1,733 documents**.
+LSA and MiniLM are not interchangeable: task-level nearest-score Spearman
+correlations are **0.186, 0.117, and 0.427**. Long-input handling also matters;
+chunk aggregation changes Task-3 geometry while leaving Tasks 1–2 effectively
+unchanged.
+
+A separate controlled screen uses **six frozen content cases, eight methods,
+and nine preregistered directional hypotheses**. The shallow syntax measures
+pass their current screen, while LSA and MiniLM support broad semantic
+relatedness but fail the stricter semantic-equivalence and role-reversal gates.
+Those failures are retained as results. No unlearning sweep has been selected
+or run from this foundation work.
+
+<details>
+  <summary><strong>Open the current decision boundary</strong></summary>
+  <br/>
+
+| Completed | Deliberately unresolved |
+|---|---|
+| Public-data and artifact audit | Primary forgetting level and estimand |
+| Lexical, sparse, dense, and neural geometry comparison | Final definitions of proximity constructs |
+| Controlled syntax and semantic screens | Benchmark, model, and unlearning method |
+| 10,818 measurement checks and 630 construct checks | Official scoring unavailable to collaborators |
+| Reproducible public-safe package | First bounded experiment after team agreement |
+
+This status distinguishes completed audit work from experimental claims. It
+does not imply publication, institutional endorsement, or a finished
+unlearning study.
 
 </details>
 
 <br/>
 
 <a id="selected-work"></a>
-<p align="center"><sub>03 / SELECTED WORK</sub></p>
+<p align="center"><sub>04 / PUBLIC REPOSITORIES</sub></p>
 
-<h2 align="center">Evidence first. Source where public.</h2>
+<h2 align="center">Research discipline, product systems, and real-time software.</h2>
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="#flagship-result">🌊 LABUST Underwater Detection ↑</a></h3>
-      <code>RESEARCH RESULT · PRIVATE COLLABORATION</code>
+      <h3><a href="https://github.com/hamzamaverick51/Dual-Finance-Tool">Dual Finance Tool ↗</a></h3>
+      <code>FASTAPI · SUPABASE · JINJA2 · GEMINI</code>
       <br/><br/>
-      YOLO26 transfer learning, dataset forensics, whole-video evaluation,
-      public replay, checkpoint interpolation, per-class gates, and a complete
-      reproducibility trail.
-      <br/><br/>
-      <sub>PYTHON · PYTORCH · ULTRALYTICS · OPENCV</sub>
+      Internship build combining tax, installment, and reverse-finance flows
+      with session-based authentication, persisted user history, enterprise
+      finance API calls, and generated explanations. The repository documents
+      an AWS Lambda/API Gateway and S3/CloudFront deployment path.
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/hamzamaverick51/Dual-Finance-Tool">💳 Dual Finance Tool ↗</a></h3>
-      <code>INTERNSHIP BUILD · OPEN SOURCE</code>
+      <h3><a href="https://github.com/hamzamaverick51/GradientVision">GradientVision ↗</a></h3>
+      <code>PYTHON · SYMPY · NUMPY · SCIKIT-LEARN · PLOTLY</code>
       <br/><br/>
-      Tax and installment planning through enterprise financial APIs, secure
-      user history, and Gemini-generated explanations, with a documented AWS
-      serverless deployment path.
-      <br/><br/>
-      <sub>FASTAPI · SUPABASE · GEMINI · AWS</sub>
+      A mathematical analysis assistant with symbolic gradients and Hessians,
+      numerical verification, critical-point classification, natural-language
+      query handling, and 2D/3D visualizations.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/hamzamaverick51/GradientVision">📐 GradientVision ↗</a></h3>
-      <code>SHIPPED · OPEN SOURCE</code>
+      <h3><a href="https://github.com/hamzamaverick51/Ballistic-Drift">Ballistic Drift ↗</a></h3>
+      <code>C++ · RAYLIB · GAME AI · REAL-TIME GRAPHICS</code>
       <br/><br/>
-      Turns natural-language mathematical questions into inspectable symbolic
-      and numerical computation, critical-point classification, gradient fields,
-      and 2D/3D visualizations.
-      <br/><br/>
-      <sub>PYTHON · SYMPY · NUMPY · SCIKIT-LEARN · PLOTLY</sub>
+      A systems-heavy Pong reinterpretation with local PvP, adaptive CPU
+      difficulty, collision handling, particles, ripples, screen shake,
+      reactive weather, audio states, and persistent high scores.
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/hamzamaverick51/Ballistic-Drift">🔥 Ballistic Drift ↗</a></h3>
-      <code>SHIPPED · OPEN SOURCE</code>
+      <h3><a href="https://github.com/hamzamaverick51/360-SPACE-SHOOTER">360 Space Shooter ↗</a></h3>
+      <code>C++ · SFML · TEAM PROJECT</code>
       <br/><br/>
-      A systems-heavy Pong reinvention with adaptive CPU difficulty, local PvP,
-      particle and ripple effects, screen shake, reactive weather, audio, and
-      persistent high scores.
-      <br/><br/>
-      <sub>C++ · RAYLIB · GAME AI · REAL-TIME GRAPHICS</sub>
+      A team-built 2D shooter centered on free-direction movement, mouse-aimed
+      projectiles, enemy spawning, collision detection, scoring, sound, and
+      frame-rate control. The public repository currently documents the design,
+      controls, contributors, and setup rather than publishing the source.
     </td>
   </tr>
 </table>
 
 <br/>
 
-<a id="professional-collaborations"></a>
-<p align="center"><sub>04 / PROFESSIONAL + APPLIED WORK</sub></p>
+<p align="center"><sub>05 / INDUSTRY + TEAM ENGINEERING</sub></p>
 
-<h2 align="center">Control reliability. Production systems.</h2>
-
-<p align="center">
-  Public-safe summaries of work completed across a technical research audit,
-  an industry internship, and team software engineering.
-</p>
-
-<h3 align="center"><a href="https://www.mdpi.com/2076-3417/11/9/3785">🤖 Packet-Loss Robustness in Multi-Agent Control ↗</a></h3>
-
-<p align="center">
-  <strong>Research audit for a Malaysia-based controls collaboration</strong>
-  <br/><br/>
-  <code>PROOF AUDIT · SIMULATION-BACKED · PROTOCOL REPAIR</code>
-</p>
-
-<div align="center">
-  <img src="./assets/bet-spsa-packet-loss.svg" width="100%" alt="BET-SPSA packet-loss audit showing bounded neighbour-channel degradation, structural broadcast-channel failure, a pair-validity repair, and effective consensus gain as the robustness parameter" />
-</div>
+<h2 align="center">From APIs and deployment to multi-role university systems.</h2>
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>What I built</h3>
-      Extended the BET-SPSA formulation published by Nohaidda Sariff and Zool
-      Hilmi Ismail (UTM). I reconstructed the rendezvous controller, mapped each
-      proof dependency on transmitted quantities, and built Bernoulli
-      reliability sweeps across both communication channels and multiple
-      gain/topology settings.
+      <h3>NETSOL Technologies</h3>
+      <strong>Software Engineering Intern · 2025</strong>
+      <br/><br/>
+      Built microservices with AWS Lambda and API Gateway, integrated Supabase
+      authentication and PostgreSQL-backed persistence, developed FastAPI
+      business APIs, containerized services with Docker, and connected a
+      Jinja-based frontend to S3/CloudFront hosting.
+      <br/><br/>
+      <sub>FASTAPI · POSTGRESQL · SUPABASE · DOCKER · AWS</sub>
     </td>
     <td width="50%" valign="top">
-      <h3>What the evidence changed</h3>
-      Neighbour loss behaved like a bounded reliability-dependent perturbation;
-      broadcast loss destroyed the SPSA measurement pair. A paired-skip policy
-      restored graceful degradation, and effective gain <code>k × d̄</code>
-      emerged as the controlling robustness parameter.
-    </td>
-  </tr>
-</table>
-
-<p align="center"><sub>NUMPY · SPSA · STOCHASTIC CONTROL · PACKET-LOSS SIMULATION</sub></p>
-
-<br/>
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>💼 NETSOL Technologies</h3>
-      <strong>AI &amp; Machine Learning Intern · 2025</strong>
-      <br/><br/>
-      <code>INDUSTRY INTERNSHIP · END-TO-END BUILD</code>
-      <br/><br/>
-      Built the Dual Finance Tool across backend APIs, enterprise finance
-      integrations, Supabase authentication and persistence, Gemini-generated
-      explanations, Docker, and an AWS serverless deployment path.
-      <br/><br/>
-      <sub>FASTAPI · SUPABASE · GEMINI · DOCKER · AWS</sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🏫 ARCH Student Portal</h3>
+      <h3>ARCH Student Portal</h3>
       <strong>FAST-NUCES team software project · 2026</strong>
       <br/><br/>
-      <code>TEAM SYSTEM · FULL-STACK DELIVERY</code>
-      <br/><br/>
-      Helped build a React/Vite portal unifying registration, grading,
+      Helped build a React/Vite portal that unifies registration, grading,
       attendance, role-based access, and approval workflows previously spread
       across multiple university systems, backed by live REST APIs and database
       pipelines.
       <br/><br/>
-      <sub>REACT · VITE · NODE.JS · MONGODB / SQL · RBAC</sub>
+      <sub>REACT · VITE · NODE.JS · DATABASES · RBAC</sub>
     </td>
   </tr>
 </table>
 
 <p align="center">
   <sub>
-    These descriptions state the work performed; they do not imply publication,
-    institutional endorsement, or a completed theorem.
+    These descriptions state work performed. They do not imply publication,
+    institutional endorsement, or completion beyond the status shown.
   </sub>
 </p>
 
 <br/>
 
-<p align="center"><sub>05 / RESEARCH ATLAS</sub></p>
+<p align="center"><sub>06 / RESEARCH ATLAS</sub></p>
 
-<h2 align="center">One question across four failure modes.</h2>
-
-<p align="center">
-  How do we identify, measure, and correct failures that clean aggregate
-  benchmarks hide?
-</p>
+<h2 align="center">Different domains. The same question about hidden failure.</h2>
 
 <div align="center">
-  <img src="./assets/research-panorama-v1.png" width="100%" alt="Research panorama connecting underwater vision, controller analysis, representation geometry, and language-model unlearning" />
+  <img src="./assets/research-panorama-v1.png" width="100%" alt="Research panorama connecting underwater vision, autonomous systems, representation geometry, and language-model unlearning" />
 </div>
-
-<details>
-  <summary><strong>Open the active research atlas</strong></summary>
-  <br/>
 
 | Failure mode | Research thread | Current status |
 |---|---|---|
-| **Domain shift** | Pool-to-sea underwater object detection | `VALID METHOD · DATA ACQUISITION` |
-| **Representation error** | Controlled Earth / space-analog data-mixture sweep | `61-ROW SWEEP DELIVERED` |
-| **Stability** | Controller proof auditing, packet-loss simulation, and protocol repair | `AUDIT DELIVERED` |
-| **Selective forgetting** | Representation, semantic, and surface adjacency in LM unlearning | `STUDY DESIGN` |
-
-These are active research threads, not publication claims. Each stays explicitly
-qualified by its experimental status.
-
-</details>
+| **Domain shift** | Pool-to-sea underwater object detection | `MEASURED METHOD · DATA DEPENDENCY IDENTIFIED` |
+| **Evaluation leakage** | Video-adjacent underwater benchmark splits | `AUDITED · REBUILT` |
+| **Construct ambiguity** | Lexical, syntactic, semantic, and neural proximity | `CONTROLLED SCREEN COMPLETE` |
+| **Selective forgetting** | Collateral effects in LLM unlearning | `DEFINITIONS + EXPERIMENT DECISION` |
 
 <br/>
 
-<p align="center"><sub>06 / TECHNICAL BACKBONE</sub></p>
+<p align="center"><sub>07 / TECHNICAL BACKBONE</sub></p>
 
 <h2 align="center">One stack across research and product engineering.</h2>
 
@@ -339,12 +315,12 @@ qualified by its experimental status.
 ```yaml
 research_computing:
   - PyTorch, Ultralytics, OpenCV
-  - NumPy, scikit-learn, SymPy
-  - reproducible experiments and dataset audits
+  - NumPy, scikit-learn, SciPy, SymPy
+  - dataset audits, controlled experiments, artifact verification
   - per-class, per-domain, and failure-mode evaluation
 
 software_systems:
-  - Python, FastAPI, REST APIs
+  - Python, FastAPI, Jinja2, REST APIs
   - TypeScript, React, Node.js
   - PostgreSQL, Supabase, MongoDB
   - Docker, Linux, AWS serverless infrastructure
@@ -358,7 +334,7 @@ systems_programming:
 
 <br/>
 
-<p align="center"><sub>07 / OPERATING PRINCIPLES</sub></p>
+<p align="center"><sub>08 / OPERATING PRINCIPLES</sub></p>
 
 <h2 align="center">Ambitious questions. Precise claims.</h2>
 
@@ -366,19 +342,19 @@ systems_programming:
   <tr>
     <td width="50%" valign="top">
       <h3>Optimize for</h3>
-      ✅ Evidence before confidence<br/>
-      ✅ Reproducible runs before screenshots<br/>
-      ✅ Failure analysis before architecture shopping<br/>
-      ✅ Clean interfaces before clever abstractions<br/>
-      ✅ Work another person can inspect
+      Evidence before confidence<br/>
+      Reproducible runs before screenshots<br/>
+      Failure analysis before architecture shopping<br/>
+      Clean interfaces before clever abstractions<br/>
+      Work another person can inspect
     </td>
     <td width="50%" valign="top">
-      <h3>Actively avoid</h3>
-      ❌ Invented percentages<br/>
-      ❌ Test leakage disguised as performance<br/>
-      ❌ “AI-powered” without a measurable job<br/>
-      ❌ Activity confused with progress<br/>
-      ❌ Confidence unsupported by evidence
+      <h3>Avoid</h3>
+      Invented percentages<br/>
+      Test leakage presented as performance<br/>
+      “AI-powered” without a measurable job<br/>
+      Activity confused with progress<br/>
+      Confidence unsupported by evidence
     </td>
   </tr>
 </table>
@@ -395,8 +371,9 @@ systems_programming:
 
 ## Let’s build something that has to work.
 
-I’m interested in computer vision in difficult environments, scientific machine
-learning, autonomous systems, and evaluation that survives contact with reality.
+I am interested in computer vision in difficult environments, scientific
+machine learning, LLM evaluation, autonomous systems, and software whose claims
+survive contact with reality.
 
 [**GitHub**](https://github.com/hamzamaverick51?tab=repositories)
 &nbsp;·&nbsp;

@@ -1,0 +1,13 @@
+# Private resume files — local only; never publish from this profile repository
+/Hamza Raheel Resume.docx
+/Hamza Raheel Resume.pdf
+/Hamza Raheel Resume-2.original.pdf
+
+# Local credentials and private working material
+.env
+.env.*
+!.env.example
+*.private.*
+*.local.*
+/.private/
+/.local/

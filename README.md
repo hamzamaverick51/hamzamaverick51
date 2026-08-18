@@ -87,7 +87,7 @@
 
 <p align="center"><sub>02 / LABUST FIELD RESULT</sub></p>
 
-<h2 align="center">Underwater detection that survives pool → sea.</h2>
+<h2 align="center">Underwater detection under pool → sea domain shift.</h2>
 
 <p align="center">
   The collaboration began with a detector that performed well on its released
@@ -97,20 +97,20 @@
 </p>
 
 <div align="center">
-  <img src="./assets/labust-transfer-result.svg" width="100%" alt="LABUST result showing the first accepted eight-frame domain adaptation and its source-retention gate" />
+  <img src="./assets/labust-transfer-result.svg" width="100%" alt="LABUST annotation-efficiency result across five target-data budgets, including uncertainty, the 128-frame peak, plastic-class failure, and the source-retention gate" />
 </div>
 
-The first accepted adaptation used **eight target frames**, class-balanced
-public replay, a frozen backbone, and deterministic checkpoint interpolation.
-It raised corrected target validation mAP50-95 from **0.0454 to 0.1244** while
-retaining **0.5556** on the source validation domain.
+A 15-run annotation-efficiency study—five budgets and three seeds each—found
+the strongest target-domain mean at **128 annotated frames: 0.2015 ± 0.0042
+mAP50-95**. Using all 524 labelled frames scored lower at **0.1905 ± 0.0072**,
+showing that frame selection mattered more than raw annotation volume beyond
+the 128-frame point.
 
-The later three-seed study gives the defensible headline:
-**0.0454 → 0.1427 ± 0.0152 mAP50-95**, roughly **3.1×**. A separate 15-run
-annotation-efficiency study found the strongest target-domain mean at
-**128 annotated frames: 0.2015 ± 0.0042**. That model did not clear the fixed
-source-retention gate, so it was reported as an efficiency result—not promoted
-as the deployable champion.
+The model-of-record result remains the independently repeated eight-frame
+effect: **0.0454 → 0.1427 ± 0.0152**, roughly **3.1×**. The budget-128 blend
+reached **0.2071** on target validation but retained **0.5449** on the source
+domain, below the predeclared **0.5530** floor. No new model was promoted, and
+the sealed tests remained closed.
 
 <details>
   <summary><strong>Open the research record</strong></summary>

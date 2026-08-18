@@ -1,76 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
-  <title id="title">LABUST underwater domain-transfer result</title>
-  <desc id="desc">A comparison of target validation mAP50-95 for source-best transfer, transfer-selected initialization, and the accepted eight-frame adaptation, with source-retention and decision-gate context.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">LABUST annotation-efficiency result</title>
+  <desc id="desc">A five-budget, fifteen-run study showing corrected target validation mAP50-95 peaking at 128 annotated frames, with uncertainty, plastic-class failure, and the source-retention decision gate.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#03101d"/>
       <stop offset="0.55" stop-color="#071b2b"/>
       <stop offset="1" stop-color="#0a2935"/>
     </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#16829a"/>
+      <stop offset="1" stop-color="#3be8ff"/>
+    </linearGradient>
     <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M48 0H0V48" fill="none" stroke="#3be8ff" stroke-opacity="0.055"/>
+      <path d="M48 0H0V48" fill="none" stroke="#3be8ff" stroke-opacity="0.05"/>
     </pattern>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <rect x="1" y="1" width="1198" height="558" rx="24" fill="url(#bg)" stroke="#16829a" stroke-width="2"/>
-  <rect x="2" y="2" width="1196" height="556" rx="23" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="648" rx="24" fill="url(#bg)" stroke="#16829a" stroke-width="2"/>
+  <rect x="2" y="2" width="1196" height="646" rx="23" fill="url(#grid)"/>
 
   <g opacity="0.19" fill="none" stroke="#3be8ff">
-    <circle cx="1060" cy="110" r="42"/>
-    <circle cx="1060" cy="110" r="76"/>
-    <circle cx="1060" cy="110" r="110"/>
-    <path d="M935 110h250M1060-15v250M1060 110l102-58"/>
+    <circle cx="1080" cy="77" r="23"/>
+    <circle cx="1080" cy="77" r="46"/>
+    <circle cx="1080" cy="77" r="69"/>
+    <path d="M998 77h164M1080-5v164M1080 77l63-38"/>
   </g>
-  <circle cx="1135" cy="68" r="5" fill="#3be8ff" filter="url(#glow)"/>
-  <circle cx="995" cy="154" r="4" fill="#27c7a8" filter="url(#glow)"/>
+  <circle cx="1136" cy="48" r="5" fill="#3be8ff" filter="url(#glow)"/>
+  <circle cx="1017" cy="121" r="4" fill="#27c7a8" filter="url(#glow)"/>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <text x="62" y="68" fill="#27c7a8" font-size="15" font-weight="700" letter-spacing="5">FIELD RESULT / 2026</text>
-    <text x="62" y="112" fill="#f2f8fb" font-size="30" font-weight="800">UNDERWATER DOMAIN TRANSFER</text>
-    <text x="62" y="142" fill="#9bdff2" font-size="15" letter-spacing="1.5">TARGET VALIDATION mAP50-95 · HIGHER IS BETTER</text>
+    <text x="58" y="54" fill="#27c7a8" font-size="14" font-weight="700" letter-spacing="4.5">FIELD RESULT / 2026</text>
+    <text x="58" y="95" fill="#f2f8fb" font-size="29" font-weight="800">ANNOTATION EFFICIENCY UNDER DOMAIN SHIFT</text>
+    <text x="58" y="126" fill="#9bdff2" font-size="14" letter-spacing="1.3">15 RUNS · 5 BUDGETS · 3 SEEDS EACH · CORRECTED TARGET VALIDATION</text>
 
-    <g font-size="15">
-      <text x="62" y="215" fill="#9bb5c1">SOURCE-BEST TRANSFER</text>
-      <text x="62" y="278" fill="#9bb5c1">TRANSFER-SELECTED INIT</text>
-      <text x="62" y="341" fill="#f2f8fb" font-weight="700">ACCEPTED ADAPTATION</text>
+    <text x="58" y="173" fill="#9bdff2" font-size="11" font-weight="700" letter-spacing="2.2">ANNOTATED FRAMES</text>
+    <text x="1116" y="173" fill="#9bdff2" font-size="11" font-weight="700" letter-spacing="1.5" text-anchor="end">mAP50-95 MEAN ± SD</text>
+
+    <g font-size="14">
+      <text x="58" y="211" fill="#9bb5c1">8</text>
+      <text x="58" y="255" fill="#9bb5c1">32</text>
+      <text x="58" y="299" fill="#9bb5c1">64</text>
+      <text x="58" y="343" fill="#f2f8fb" font-weight="800">128 · PEAK</text>
+      <text x="58" y="387" fill="#9bb5c1">524 · ALL</text>
     </g>
 
     <g>
-      <rect x="300" y="195" width="700" height="26" rx="13" fill="#0b3041"/>
-      <rect x="300" y="258" width="700" height="26" rx="13" fill="#0b3041"/>
-      <rect x="300" y="321" width="700" height="26" rx="13" fill="#0b3041"/>
-      <rect x="300" y="195" width="43" height="26" rx="13" fill="#52758a"/>
-      <rect x="300" y="258" width="255" height="26" rx="13" fill="#16829a"/>
-      <rect x="300" y="321" width="700" height="26" rx="13" fill="#27c7a8"/>
+      <rect x="188" y="195" width="742" height="19" rx="9.5" fill="#0b3041"/>
+      <rect x="188" y="239" width="742" height="19" rx="9.5" fill="#0b3041"/>
+      <rect x="188" y="283" width="742" height="19" rx="9.5" fill="#0b3041"/>
+      <rect x="188" y="327" width="742" height="19" rx="9.5" fill="#0b3041"/>
+      <rect x="188" y="371" width="742" height="19" rx="9.5" fill="#0b3041"/>
+
+      <rect x="188" y="195" width="583" height="19" rx="9.5" fill="#16829a"/>
+      <rect x="188" y="239" width="527" height="19" rx="9.5" fill="#16829a" opacity="0.78"/>
+      <rect x="188" y="283" width="688" height="19" rx="9.5" fill="#239bb4"/>
+      <rect x="188" y="327" width="742" height="19" rx="9.5" fill="#3be8ff"/>
+      <rect x="188" y="371" width="701" height="19" rx="9.5" fill="#27c7a8" opacity="0.72"/>
     </g>
 
-    <g font-size="18" font-weight="800" text-anchor="end">
-      <text x="1088" y="215" fill="#9bb5c1">0.0076</text>
-      <text x="1088" y="278" fill="#9bdff2">0.0454</text>
-      <text x="1088" y="341" fill="#3be8ff">0.1244</text>
+    <g font-size="16" font-weight="800" text-anchor="end">
+      <text x="1116" y="211" fill="#9bb5c1">0.1583 ± 0.0119</text>
+      <text x="1116" y="255" fill="#9bb5c1">0.1434 ± 0.0107</text>
+      <text x="1116" y="299" fill="#9bdff2">0.1869 ± 0.0097</text>
+      <text x="1116" y="343" fill="#3be8ff">0.2015 ± 0.0042</text>
+      <text x="1116" y="387" fill="#83f4de">0.1905 ± 0.0072</text>
     </g>
 
-    <line x1="62" y1="387" x2="1138" y2="387" stroke="#16829a" stroke-opacity="0.65"/>
+    <line x1="58" y1="422" x2="1142" y2="422" stroke="#16829a" stroke-opacity="0.7"/>
 
     <g>
-      <rect x="62" y="418" width="326" height="92" rx="13" fill="#071723" stroke="#16829a"/>
-      <text x="84" y="448" fill="#9bdff2" font-size="12" letter-spacing="2">TARGET GAIN</text>
-      <text x="84" y="485" fill="#f2f8fb" font-size="25" font-weight="800">2.74×</text>
-      <text x="180" y="485" fill="#7fa6b7" font-size="12">vs selected init</text>
+      <rect x="58" y="450" width="326" height="104" rx="13" fill="#061723" stroke="#16829a"/>
+      <text x="80" y="478" fill="#9bdff2" font-size="11" font-weight="700" letter-spacing="2">PEAK BUDGET</text>
+      <text x="80" y="513" fill="#f2f8fb" font-size="23" font-weight="800">128 frames</text>
+      <text x="80" y="537" fill="#7fa6b7" font-size="12">148 boxes · full set scores lower</text>
 
-      <rect x="410" y="418" width="326" height="92" rx="13" fill="#071723" stroke="#16829a"/>
-      <text x="432" y="448" fill="#9bdff2" font-size="12" letter-spacing="2">SOURCE RETENTION</text>
-      <text x="432" y="485" fill="#f2f8fb" font-size="25" font-weight="800">95.45%</text>
-      <text x="550" y="485" fill="#7fa6b7" font-size="12">0.5556 mAP50-95</text>
+      <rect x="408" y="450" width="326" height="104" rx="13" fill="#061723" stroke="#27c7a8"/>
+      <text x="430" y="478" fill="#27c7a8" font-size="11" font-weight="700" letter-spacing="2">MEASUREMENT PRECISION</text>
+      <text x="430" y="513" fill="#f2f8fb" font-size="23" font-weight="800">2.9× tighter</text>
+      <text x="430" y="537" fill="#7fa6b7" font-size="12">sd 0.0119 → 0.0042</text>
 
-      <rect x="758" y="418" width="380" height="92" rx="13" fill="#071723" stroke="#27c7a8"/>
-      <text x="780" y="448" fill="#27c7a8" font-size="12" letter-spacing="2">DECISION GATE</text>
-      <text x="780" y="478" fill="#f2f8fb" font-size="15" font-weight="700">8 FRAMES + REPLAY + FREEZE + BLEND</text>
-      <text x="780" y="499" fill="#7fa6b7" font-size="11">raw 0.16048 branch rejected: plastic gate failed</text>
+      <rect x="758" y="450" width="384" height="104" rx="13" fill="#061723" stroke="#8b7cff"/>
+      <text x="780" y="478" fill="#b9b0ff" font-size="11" font-weight="700" letter-spacing="2">DEPLOYMENT GATE</text>
+      <text x="780" y="507" fill="#f2f8fb" font-size="15" font-weight="800">0.2071 TARGET · 0.5449 SOURCE</text>
+      <text x="780" y="531" fill="#b9b0ff" font-size="12">source floor 0.5530 · no model promoted</text>
     </g>
+
+    <rect x="58" y="580" width="1084" height="40" rx="10" fill="#071723" stroke="#16829a" stroke-opacity="0.75"/>
+    <text x="80" y="605" fill="#83f4de" font-size="12" font-weight="700" letter-spacing="1.25">PLASTIC: 0.0000 AT EVERY BUDGET · 71× MORE LABELS DID NOT HELP · NEW SCENE-DIVERSE CAPTURE REQUIRED</text>
+    <text x="1142" y="638" fill="#6f93a3" font-size="9" letter-spacing="1.1" text-anchor="end">VALIDATION ONLY · SEALED TESTS REMAIN CLOSED</text>
   </g>
 </svg>

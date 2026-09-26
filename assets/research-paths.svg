@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">Hamza Raheel research collaborations</title>
+  <desc id="desc">Three research paths: ongoing NLP evaluation at UNAM, ongoing Urdu multimodal AI at JKU Linz, and a completed underwater vision collaboration with LABUST.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#03101d"/>
+      <stop offset="0.58" stop-color="#071b2b"/>
+      <stop offset="1" stop-color="#0a2935"/>
+    </linearGradient>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0V46" fill="none" stroke="#3be8ff" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="388" rx="24" fill="url(#bg)" stroke="#16829a" stroke-width="2"/>
+  <rect x="2" y="2" width="1196" height="386" rx="23" fill="url(#grid)"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="56" y="53" fill="#27c7a8" font-size="14" font-weight="700" letter-spacing="4">RESEARCH / 2026</text>
+    <text x="56" y="94" fill="#f2f8fb" font-size="29" font-weight="800">THREE DOMAINS. ONE STANDARD OF EVIDENCE.</text>
+    <text x="56" y="124" fill="#9bdff2" font-size="14" letter-spacing="1.1">DATA QUALITY · REPRODUCIBLE WORKFLOWS · CAREFUL EVALUATION</text>
+
+    <rect x="56" y="155" width="344" height="165" rx="14" fill="#061723" stroke="#16829a"/>
+    <text x="80" y="187" fill="#27c7a8" font-size="12" font-weight="700" letter-spacing="2">ONGOING / UNAM</text>
+    <text x="80" y="225" fill="#f2f8fb" font-size="23" font-weight="800">NLP research</text>
+    <text x="80" y="257" fill="#9bdff2" font-size="14">Evaluation and research workflows</text>
+    <text x="80" y="291" fill="#7fa6b7" font-size="12">GIL-IIMAS · Mexico City</text>
+
+    <rect x="428" y="155" width="344" height="165" rx="14" fill="#061723" stroke="#8b7cff"/>
+    <text x="452" y="187" fill="#b9b0ff" font-size="12" font-weight="700" letter-spacing="2">ONGOING / JKU LINZ</text>
+    <text x="452" y="225" fill="#f2f8fb" font-size="23" font-weight="800">Multimodal AI</text>
+    <text x="452" y="257" fill="#b9b0ff" font-size="14">Urdu image-and-text research</text>
+    <text x="452" y="291" fill="#7fa6b7" font-size="12">Computational Perception · Linz</text>
+
+    <rect x="800" y="155" width="344" height="165" rx="14" fill="#061723" stroke="#27c7a8"/>
+    <text x="824" y="187" fill="#83f4de" font-size="12" font-weight="700" letter-spacing="2">COMPLETED / LABUST</text>
+    <text x="824" y="225" fill="#f2f8fb" font-size="23" font-weight="800">Underwater vision</text>
+    <text x="824" y="257" fill="#83f4de" font-size="14">Benchmark audit and edge software</text>
+    <text x="824" y="291" fill="#7fa6b7" font-size="12">University of Zagreb · Croatia</text>
+
+    <line x1="56" y1="341" x2="1144" y2="341" stroke="#16829a" stroke-opacity="0.7"/>
+    <text x="56" y="368" fill="#7fa6b7" font-size="12" letter-spacing="1.15">BUILD THE TOOLS · CHECK THE DATA · STATE WHAT THE RESULT SUPPORTS</text>
+  </g>
+</svg>
